@@ -1,0 +1,2510 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Lloyd-Dental. Zahntechnik – Team, Planung &amp; Zeiterfassung</title>
+  <meta name="theme-color" content="#0b3b48" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Lloyd-Dental" />
+  <link rel="manifest" href="data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22Lloyd-Dental.%20Zahntechnik%22%2C%22short_name%22%3A%22Lloyd-Dental%22%2C%22description%22%3A%22Team-%2C%20Planungs-%20%26%20Materialportal%20%5Cu2013%20Lloyd-Dental%20Zahntechnik%22%2C%22start_url%22%3A%22./%22%2C%22scope%22%3A%22./%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%230b3b48%22%2C%22theme_color%22%3A%22%230b3b48%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACyUlEQVR4nO3cMU7DQBRAQYLo4DS0pKKCE9NRpeY09FDRIBGReO0NvJk2irzFf15ZyXp3%2B/D0cQVR17MXADMJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA2s3sBfA/ve1ff/zs/vC44UqO23k9OiMdG/zvLiEEATDEKYP/3cwQPAOw2JLhH/H9JQTAIqOGd1YEAuBso4d2RgQCIE0AnGWtu/XWu4AASBMAJ1v7Lr3lLiAA0gRAmgBIEwBpAiBNAKQJgJOt/e/NLf8dKgDSkucB3g8vm13rbv%2B82bW2tsYPVlufDbADkCYAzjb6bj3jZJgAWGTU0M46FikAFls6vDPPBHstCkN8DfFfeyuEABjqNyFcwuB/EQCruKQhP8YzAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGk3sxfw370fXmYv4Wx3%2B%2BfZS1idHYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk7W4fnj5mLwJmsQOQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGmfVttAfzHu57QAAAAASUVORK5CYII%3D%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image/png%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAJy0lEQVR4nO3csVIUURBA0cUiw68xZSMi/GIzImK/hhwDS0pXYVfYnTfz7jkxQTdJ35kpuLq5vX/eAQApn0YPAAAsTwAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAEXY8eAIA5fN8/nPyzXx7vLjgJp7i6ub1/Hj0EANvzPwf/GEGwPAEAwMnOefRfIwaWIQAAOGqJw39ICFyWAADgVSMO/yEhcBkCAIC/rOHwHxIC5%2BXPAAH4wxqP/2633rm2SgAA8GLtR3bt822JTwAAbPKw%2BiTwMd4AAMRt8fjvdtudey0EAEDY1o/o1ucfSQAARM1yPGfZY2kCAACCBABA0GxPzbPtswQBABAz67Gcda9LEQAAIbMfydn3OycBAABBAgAgovJ0XNnzowQAAAQJAICA2lNxbd/3EAAAECQAACZXfRqu7n0qAQAAQQIAAIIEAMDE6q/B6/u/RQAAQJAAAIAgAQAAQQIAYFK%2Bf//k9/BvAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAIBJfXm8Gz3CKvg9/JsAAIAgAQAAQQIAAIIEAMDE6t%2B/6/u/RQAAQJAAAIAgAQAwuepr8OrepxIAABAkAAACak/DtX3f43r0APDL0%2BO30SOs2uf919EjABPxBgAgovJUXNnzowQAAAQJAICQ2Z%2BOZ9/vnAQAQMysR3LWvS5FAAAEzXYsZ9tnCQIAAIIEAEDULE/Ns%2ByxNAEAELb147n1%2BUcSAABxWz2iW517LfwnQABejun3/cPgSY5z%2BM/DGwAAXqz9uK59vi0RAAD8Ya1Hdq1zbZVPAAD8ZU2fBBz%2ByxAAALxqZAg4/JclAAA4askQcPiXIQAAONnvx/mcMeDoL08AAPAuh0f7f4LAwR9PAABwFo76tvgzQAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAARdjx4AOM3T47fRI7Cgz/uvo0dgct4AAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAoKub2/vn0UMAAMvyBgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAgn4AA8mT/dPJKHgAAAAASUVORK5CYII%3D%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/png%22%2C%22purpose%22%3A%22any%22%7D%5D%7D" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACyUlEQVR4nO3cMU7DQBRAQYLo4DS0pKKCE9NRpeY09FDRIBGReO0NvJk2irzFf15ZyXp3+/D0cQVR17MXADMJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA2s3sBfA/ve1ff/zs/vC44UqO23k9OiMdG/zvLiEEATDEKYP/3cwQPAOw2JLhH/H9JQTAIqOGd1YEAuBso4d2RgQCIE0AnGWtu/XWu4AASBMAJ1v7Lr3lLiAA0gRAmgBIEwBpAiBNAKQJgJOt/e/NLf8dKgDSkucB3g8vm13rbv+82bW2tsYPVlufDbADkCYAzjb6bj3jZJgAWGTU0M46FikAFls6vDPPBHstCkN8DfFfeyuEABjqNyFcwuB/EQCruKQhP8YzAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGk3sxfw370fXmYv4Wx3++fZS1idHYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk7W4fnj5mLwJmsQOQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGmfVttAfzHu57QAAAAASUVORK5CYII=" />
+  <link rel="apple-touch-icon" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACyUlEQVR4nO3cMU7DQBRAQYLo4DS0pKKCE9NRpeY09FDRIBGReO0NvJk2irzFf15ZyXp3+/D0cQVR17MXADMJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA2s3sBfA/ve1ff/zs/vC44UqO23k9OiMdG/zvLiEEATDEKYP/3cwQPAOw2JLhH/H9JQTAIqOGd1YEAuBso4d2RgQCIE0AnGWtu/XWu4AASBMAJ1v7Lr3lLiAA0gRAmgBIEwBpAiBNAKQJgJOt/e/NLf8dKgDSkucB3g8vm13rbv+82bW2tsYPVlufDbADkCYAzjb6bj3jZJgAWGTU0M46FikAFls6vDPPBHstCkN8DfFfeyuEABjqNyFcwuB/EQCruKQhP8YzAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGk3sxfw370fXmYv4Wx3++fZS1idHYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk7W4fnj5mLwJmsQOQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGmfVttAfzHu57QAAAAASUVORK5CYII=" />
+  <style>
+    :root {
+      --primary: #0d5c63;
+      --primary-dark: #073b42;
+      --primary-soft: #e8f5f6;
+      --accent: #c97a16;
+      --accent-soft: #fef6e7;
+      --ink: #0f172a;
+      --muted: #526071;
+      --bg: #eef2f5;
+      --card: #ffffff;
+      --line: #d5dfe7;
+      --line-strong: #2c3e50;
+      --u-bg: #bbf7d0; --u-text: #14532d;
+      --hu-bg: #dcfce7; --hu-text: #166534;
+      --s-bg: #dbeafe; --s-text: #1e3a8a;
+      --k-bg: #fecaca; --k-text: #7f1d1d;
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      padding-bottom: 64px;
+    }
+
+    .brand-banner {
+      background: linear-gradient(135deg, #073b42 0%, #0d5c63 65%, #14747c 100%);
+      color: #ffffff;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 4px 16px rgba(7, 59, 66, 0.18);
+    }
+    .brand-left { display: flex; align-items: center; gap: 14px; }
+    .brand-logo-badge {
+      width: 50px; height: 50px; border-radius: 15px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      color: #ffffff; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.45rem; flex-shrink: 0;
+    }
+    .brand-title { font-size: 1.35rem; font-weight: 900; color: #ffffff; letter-spacing: -0.02em; line-height: 1.15; }
+    .brand-sub { font-size: 0.8rem; font-weight: 500; color: rgba(255, 255, 255, 0.82); margin-top: 2px; }
+    .brand-address-pill {
+      font-size: 0.76rem; font-weight: 700; color: #ffffff;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      padding: 7px 13px; border-radius: 999px;
+    }
+
+    .top-status-bar {
+      background: #062a30; color: #e2e8f0; padding: 8px 18px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.78rem; flex-wrap: wrap; gap: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255, 255, 255, 0.1); padding: 4px 11px;
+      border-radius: 999px; font-weight: 600;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #f59e0b; }
+    .dot.live { background: #4ade80; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6); }
+    .dot.err { background: #f87171; }
+
+    button, select, input, textarea { font-family: inherit; font-size: 0.92rem; }
+    .btn {
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+      padding: 9px 14px; border-radius: 11px; font-weight: 700; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 7px;
+      transition: transform 0.12s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn:hover { box-shadow: 0 3px 10px rgba(15, 23, 42, 0.07); }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-dark { background: #1e293b; color: #fff; border-color: #1e293b; }
+    .btn-success { background: #15803d; color: #fff; border-color: #15803d; }
+    .btn-danger { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+    .btn-warn { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
+
+    .start-container {
+      max-width: 820px; margin: 20px auto; padding: 0 16px 24px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+
+    .login-card {
+      background: var(--card); border-radius: 18px; padding: 18px;
+      border: 1px solid var(--line); box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    }
+    .login-card label {
+      display: block; font-size: 0.74rem; font-weight: 800; color: var(--primary-dark);
+      margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .login-grid { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; align-items: end; }
+    @media (max-width: 580px) { .login-grid { grid-template-columns: 1fr; } }
+    .login-input {
+      width: 100%; padding: 11px 13px; border-radius: 12px;
+      border: 1.5px solid #cbd5e1; font-weight: 600; font-size: 0.96rem;
+      background: #f8fafc; color: var(--ink);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .login-input:focus {
+      outline: none; border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(13, 92, 99, 0.14); background: #ffffff;
+    }
+    .login-error-box {
+      display: none; margin-top: 12px; padding: 10px 13px; border-radius: 11px;
+      background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5;
+      font-size: 0.85rem; font-weight: 700;
+    }
+    .welcome-box {
+      padding: 13px 16px; border-radius: 14px; background: var(--primary-soft);
+      border: 1px solid #b7dfe3; display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .welcome-name { font-size: 1.1rem; font-weight: 850; color: var(--primary-dark); }
+    .role-badge { padding: 5px 11px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; }
+    .role-chef { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+    .role-staff { background: #dbeafe; color: #1e40af; }
+
+    /* Kompakte Kacheln ohne Beschreibung mit farbigen 3D-Symbolen */
+    .main-tiles { display: flex; flex-direction: column; gap: 12px; }
+    .big-tile {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 14px 18px; text-align: left; cursor: pointer;
+      box-shadow: 0 5px 16px rgba(15, 23, 42, 0.05);
+      display: flex; flex-direction: row; align-items: center; gap: 16px; position: relative;
+      min-height: 76px;
+      transition: transform 0.14s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+    .big-tile:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.09);
+      border-color: #94a3b8;
+    }
+    .big-tile:active { transform: scale(0.985); }
+    .tile-3d-badge {
+      width: 50px; height: 50px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 6px 12px rgba(15, 23, 42, 0.14), inset 0 2px 3px rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .tile-3d-zeit { background: linear-gradient(145deg, #60a5fa 0%, #2563eb 100%); }
+    .tile-3d-planung { background: linear-gradient(145deg, #2dd4bf 0%, #0d9488 100%); }
+    .tile-3d-material { background: linear-gradient(145deg, #fbbf24 0%, #d97706 100%); }
+    .tile-3d-partner { background: linear-gradient(145deg, #38bdf8 0%, #0369a1 100%); }
+    .tile-title { font-size: 1.18rem; font-weight: 850; color: var(--ink); flex: 1; }
+    .pending-pill {
+      background: #e2e8f0; color: #334155; font-size: 0.74rem; font-weight: 800;
+      padding: 5px 11px; border-radius: 999px; margin-left: auto;
+    }
+    .pending-pill.amber { background: #fef3c7; color: #92400e; }
+
+    .sub-nav {
+      background: #fff; padding: 12px 16px; border-bottom: 1px solid var(--line);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+    }
+    .sub-title { font-size: 1.1rem; font-weight: 850; color: var(--primary-dark); }
+
+    .planung-dept-bar {
+      margin: 14px 14px 0; background: #fff; border: 1px solid var(--line);
+      border-radius: 16px; padding: 10px; display: grid;
+      grid-template-columns: 1fr 1fr; gap: 10px;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+    }
+    @media (max-width: 580px) { .planung-dept-bar { grid-template-columns: 1fr; } }
+    .dept-switch-btn {
+      border: 2px solid var(--line); background: #f8fafc; color: var(--ink);
+      border-radius: 13px; padding: 13px 15px; cursor: pointer;
+      display: flex; align-items: center; gap: 13px; text-align: left;
+      transition: all 0.15s ease;
+    }
+    .dept-switch-btn.active {
+      background: var(--primary-soft); border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(13, 92, 99, 0.12);
+    }
+    .dept-logo-box {
+      width: 44px; height: 44px; border-radius: 12px; background: #fff;
+      border: 1px solid var(--line); display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    }
+    .dept-switch-title { font-size: 1.05rem; font-weight: 850; color: var(--primary-dark); display: block; }
+    .dept-switch-sub { font-size: 0.77rem; color: var(--muted); font-weight: 600; display: block; margin-top: 2px; }
+
+    .tabs {
+      display: flex; background: #dde4ea; padding: 8px 12px 0;
+      gap: 5px; overflow-x: auto;
+    }
+    .tab {
+      padding: 9px 14px; border-radius: 10px 10px 0 0; background: #c7d2dc;
+      color: #334155; font-weight: 750; font-size: 0.84rem; border: none;
+      cursor: pointer; white-space: nowrap;
+    }
+    .tab.active { background: #fff; color: var(--primary-dark); }
+
+    .brush-bar {
+      background: #fff; padding: 9px 16px; border-bottom: 1px solid var(--line);
+      display: flex; align-items: center; gap: 7px; overflow-x: auto;
+    }
+    .brush-btn {
+      padding: 6px 11px; border-radius: 9px; border: 2px solid transparent;
+      font-weight: 750; font-size: 0.8rem; cursor: pointer; white-space: nowrap;
+    }
+    .brush-btn.active { border-color: var(--primary-dark); }
+    .b-U { background: var(--u-bg); color: var(--u-text); }
+    .b-HU { background: var(--hu-bg); color: var(--hu-text); }
+    .b-S { background: var(--s-bg); color: var(--s-text); }
+    .b-K { background: var(--k-bg); color: var(--k-text); }
+    .b-DEL { background: #f1f5f9; color: #475569; }
+
+    .table-wrap {
+      margin: 14px; background: #fff; border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+    table { border-collapse: collapse; width: max-content; min-width: 100%; }
+    th, td { border-right: 1px solid #e2e8f0; text-align: center; padding: 0; }
+    .month-header {
+      background: #183452; color: #fff; font-size: 0.85rem;
+      padding: 7px 4px; border-right: 2px solid #fff;
+    }
+    .day-header {
+      background: #f8fafc; font-size: 0.68rem; color: #475569;
+      padding: 3px 1px; min-width: 28px; border-bottom: 2px solid var(--line-strong);
+    }
+    .day-header.week-end { border-right: 2px solid #94a3b8; }
+    .day-header .wd { display: block; font-weight: 700; color: #1e293b; }
+    .dept-banner-row td {
+      background: #edf4f6; color: var(--primary-dark); font-weight: 850;
+      font-size: 0.8rem; text-transform: uppercase; padding: 7px 12px; text-align: left;
+      border-top: 2px solid var(--line-strong); border-bottom: 1.5px solid var(--line);
+    }
+    .dept-sticky-label { position: sticky; left: 12px; z-index: 12; display: inline-block; }
+    .emp-col {
+      position: sticky; left: 0; z-index: 10; background: #f8fafc;
+      text-align: left; padding: 8px 12px; font-weight: 750; font-size: 0.9rem;
+      min-width: 125px; border-right: 2px solid var(--line-strong);
+    }
+    th.emp-col { background: #183452; color: #fff; z-index: 20; }
+    tbody tr.emp-row { border-bottom: 1.5px solid var(--line-strong); }
+    tbody tr.emp-row:last-child { border-bottom: none; }
+    .day-cell { height: 36px; min-width: 28px; font-size: 0.72rem; font-weight: 800; cursor: pointer; }
+    .day-cell.week-end { border-right: 2px solid #94a3b8; }
+    .cell-U { background: var(--u-bg); color: var(--u-text); }
+    .cell-½U { background: var(--hu-bg); color: var(--hu-text); }
+    .cell-S { background: var(--s-bg); color: var(--s-text); }
+    .cell-K { background: var(--k-bg); color: var(--k-text); }
+
+    .wish-panel { margin: 14px; display: flex; flex-direction: column; gap: 10px; }
+    .wish-card {
+      background: #fff; border: 1px solid var(--line); border-left: 5px solid #f59e0b;
+      border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+    .wish-card.approved { border-left-color: #16a34a; background: #f0fdf4; }
+    .wish-card.rejected { border-left-color: #dc2626; background: #fef2f2; opacity: 0.82; }
+
+    .plan-controls {
+      margin: 14px; background: #fff; padding: 13px 15px; border-radius: 16px;
+      border: 1px solid var(--line); display: flex; flex-wrap: wrap;
+      gap: 10px; align-items: center; justify-content: space-between;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+    }
+    .week-nav { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+    .crown-summary-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .crown-pill {
+      background: var(--primary-soft); color: var(--primary-dark); border: 1px solid #b7dfe3;
+      padding: 6px 12px; border-radius: 10px; font-size: 0.82rem; font-weight: 800;
+    }
+    .plan-th {
+      background: var(--primary); color: #fff; padding: 9px 6px;
+      font-size: 0.8rem; min-width: 165px; border-right: 2px solid #fff;
+    }
+    .plan-emp {
+      position: sticky; left: 0; z-index: 10; background: #f8fbfc;
+      color: var(--primary-dark); font-weight: 800; font-size: 0.94rem;
+      padding: 10px 12px; text-align: left; min-width: 125px;
+      border-right: 2px solid var(--line-strong);
+    }
+    th.plan-emp { background: var(--primary-dark); color: #fff; z-index: 20; }
+    .emp-crown-total {
+      display: inline-block; margin-top: 4px; background: var(--primary);
+      color: #fff; font-size: 0.72rem; padding: 2px 7px; border-radius: 6px; font-weight: 700;
+    }
+    .plan-cell { vertical-align: top; padding: 6px; min-width: 165px; max-width: 205px; background: #fff; text-align: left; }
+    .plan-cell.absent-day { background: #fef2f2; }
+    .absent-tag {
+      display: block; background: #fee2e2; color: #991b1b;
+      font-size: 0.72rem; font-weight: 700; padding: 3px 6px; border-radius: 6px; margin-bottom: 5px; text-align: center;
+    }
+    .job-chip {
+      background: #f8fafc; border: 1px solid var(--line); border-left: 4px solid var(--primary);
+      border-radius: 10px; padding: 8px 9px; margin-bottom: 6px; font-size: 0.77rem;
+    }
+    .job-chip.done { border-left-color: #16a34a; background: #f0fdf4; opacity: 0.9; }
+    .job-chip .j-praxis { font-weight: 800; color: var(--primary-dark); display: block; cursor: pointer; }
+    .job-chip .j-patient { font-weight: 700; color: var(--ink); display: block; cursor: pointer; }
+    .job-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .j-art {
+      padding: 2px 6px; border-radius: 5px; font-size: 0.7rem;
+      font-weight: 700; background: var(--primary-soft); color: var(--primary-dark);
+    }
+    .j-crowns {
+      padding: 2px 6px; border-radius: 5px; font-size: 0.7rem;
+      font-weight: 800; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d;
+    }
+    .j-finish-note {
+      margin-top: 5px; padding: 5px 7px; border-radius: 6px;
+      background: #dcfce7; color: #14532d; font-size: 0.71rem; font-weight: 700;
+      border: 1px solid #86efac;
+    }
+    .job-chip.done .j-praxis, .job-chip.done .j-patient { text-decoration: line-through; }
+    .done-toggle-btn {
+      margin-top: 6px; width: 100%; padding: 5px 6px; border-radius: 7px;
+      border: 1px solid #86efac; background: #dcfce7; color: #166534;
+      font-size: 0.72rem; font-weight: 800; cursor: pointer;
+    }
+    .done-toggle-btn.is-done { border-color: #cbd5e1; background: #e2e8f0; color: #334155; }
+    .add-cell-btn {
+      width: 100%; padding: 6px; border: 1px dashed #94a3b8;
+      background: transparent; color: #475569; border-radius: 7px;
+      font-size: 0.76rem; font-weight: 700; cursor: pointer;
+    }
+
+    .mat-container { max-width: 920px; margin: 14px auto; padding: 0 14px; display: flex; flex-direction: column; gap: 12px; }
+    .mat-filter-bar {
+      background: #fff; padding: 13px 15px; border-radius: 16px;
+      border: 1px solid var(--line); display: flex; flex-wrap: wrap;
+      gap: 8px; align-items: center; justify-content: space-between;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+    }
+    .mat-card {
+      background: #fff; border: 1px solid var(--line); border-left: 6px solid var(--accent);
+      border-radius: 16px; padding: 15px; display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+    }
+    .mat-card.ordered { border-left-color: #16a34a; background: #f0fdf4; }
+    .mat-thumb { width: 96px; height: 96px; border-radius: 11px; object-fit: cover; border: 1px solid var(--line); cursor: zoom-in; }
+    .mat-body { flex: 1; min-width: 210px; display: flex; flex-direction: column; gap: 6px; }
+    .mat-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+    .mat-title { font-size: 1.05rem; font-weight: 800; color: var(--ink); }
+    .mat-meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.78rem; }
+    .m-badge { padding: 3px 8px; border-radius: 6px; font-weight: 700; background: #e2e8f0; color: #1e293b; }
+    .m-badge-qty { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    .m-badge-dept { background: var(--primary-soft); color: var(--primary-dark); }
+    .m-badge-open { background: #ffedd5; color: #9a3412; }
+    .m-badge-ordered { background: #dcfce7; color: #166534; }
+    .mat-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .photo-preview-box { margin-top: 8px; display: flex; align-items: center; gap: 10px; }
+    .photo-preview-box img { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); }
+
+    .partner-form-card {
+      background: #fff; border: 1px solid var(--line); border-left: 6px solid #0369a1;
+      border-radius: 16px; padding: 16px; box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .partner-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 580px) { .partner-grid-2 { grid-template-columns: 1fr; } }
+
+    .alert-banner {
+      margin: 12px 14px 0; padding: 11px 15px; border-radius: 12px;
+      background: #fef3c7; border: 1px solid #f59e0b; color: #92400e;
+      font-size: 0.84rem; display: none;
+    }
+    .alert-banner.visible { display: block; }
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.65);
+      display: none; align-items: center; justify-content: center;
+      z-index: 100; padding: 16px;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      background: #fff; border-radius: 18px; max-width: 480px; width: 100%;
+      padding: 20px; max-height: 90vh; overflow-y: auto;
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.25);
+    }
+    .modal h2 { margin: 0 0 14px; font-size: 1.1rem; color: var(--primary-dark); }
+    .form-row { margin-bottom: 12px; }
+    .form-row label { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px; }
+    .form-row input, .form-row select, .form-row textarea {
+      width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 10px;
+    }
+    .modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<div class="brand-banner">
+  <div class="brand-left">
+    <div class="brand-logo-badge">L</div>
+    <div>
+      <div class="brand-title">Lloyd-Dental. Zahntechnik</div>
+      <div class="brand-sub">Team-, Planungs- &amp; Material-App</div>
+    </div>
+  </div>
+  <div class="brand-address-pill">📍 Leher Heerstraße 37, 28359 Bremen-Horn-Lehe</div>
+</div>
+
+<div class="top-status-bar">
+  <div class="status-pill">
+    <span class="dot" id="syncDot"></span>
+    <span id="syncText">Verbinde...</span>
+  </div>
+  <div id="loggedInBadge">Nicht angemeldet</div>
+</div>
+
+<!-- VIEW 0: STARTSEITE -->
+<div id="viewStart" class="start-container">
+  <div class="login-card">
+    <div id="loginFormArea">
+      <div class="login-grid">
+        <div>
+          <label for="loginUsernameInput">Benutzername oder Name</label>
+          <input type="text" id="loginUsernameInput" class="login-input" placeholder="z. B. husam" autocomplete="username" onkeydown="if(event.key==='Enter') loginWithCredentials()" />
+        </div>
+        <div>
+          <label for="loginPasswordInput">Passwort</label>
+          <input type="password" id="loginPasswordInput" class="login-input" placeholder="Passwort (z. B. 123)..." autocomplete="current-password" onkeydown="if(event.key==='Enter') loginWithCredentials()" />
+        </div>
+        <button type="button" class="btn btn-primary" style="height:46px; justify-content:center;" onclick="loginWithCredentials()">Anmelden</button>
+      </div>
+      <div id="loginErrorMsg" class="login-error-box"></div>
+    </div>
+
+    <div id="welcomeArea" style="display:none;" class="welcome-box">
+      <div>
+        <div class="welcome-name" id="welcomeNameDisplay"></div>
+        <div style="font-size:0.8rem; color:#475569;" id="welcomeUserDisplay"></div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span id="welcomeRoleBadge" class="role-badge"></span>
+        <button type="button" class="btn" style="padding:6px 11px; font-size:0.8rem;" onclick="logoutUser()">Abmelden</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-tiles">
+    <button type="button" class="big-tile" onclick="openSection('anwesenheit')">
+      <span class="tile-3d-badge tile-3d-zeit" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <rect x="4" y="6" width="20" height="18" rx="4" fill="#ffffff"/>
+          <path d="M4 11H24" stroke="#2563eb" stroke-width="2.4"/>
+          <circle cx="9.5" cy="6" r="2" fill="#dbeafe"/>
+          <circle cx="18.5" cy="6" r="2" fill="#dbeafe"/>
+          <circle cx="10" cy="16.5" r="1.6" fill="#2563eb"/>
+          <circle cx="14" cy="16.5" r="1.6" fill="#2563eb"/>
+          <circle cx="18" cy="16.5" r="1.6" fill="#2563eb"/>
+        </svg>
+      </span>
+      <span class="tile-title">Zeiterfassung</span>
+      <span class="pending-pill" id="startWishBadge" style="display:none;">0 Wünsche</span>
+    </button>
+
+    <button type="button" class="big-tile" onclick="openSection('planung')">
+      <span class="tile-3d-badge tile-3d-planung" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <rect x="5" y="5" width="18" height="20" rx="3.5" fill="#ffffff"/>
+          <rect x="9.5" y="3" width="9" height="4" rx="2" fill="#99f6e4"/>
+          <path d="M9 12.5H19M9 16.5H16M9 20.5H14" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="tile-title">Planung</span>
+    </button>
+
+    <button type="button" class="big-tile" onclick="openSection('material')">
+      <span class="tile-3d-badge tile-3d-material" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <path d="M14 4L23 9V19L14 24L5 19V9L14 4Z" fill="#ffffff"/>
+          <path d="M5 9L14 14L23 9M14 14V24" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="tile-title">Materialbestellung</span>
+      <span class="pending-pill amber" id="startMaterialBadge" style="display:none;">0 Offen</span>
+    </button>
+
+    <button type="button" class="big-tile" onclick="openSection('grundmann')">
+      <span class="tile-3d-badge tile-3d-partner" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <rect x="4" y="6" width="20" height="16" rx="3" fill="#ffffff"/>
+          <path d="M4 9L14 15L24 9" stroke="#0369a1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="18" r="4" fill="#38bdf8"/>
+        </svg>
+      </span>
+      <span class="tile-title">Grundmann Partnerlabor (Bielefeld)</span>
+      <span class="pending-pill" id="startGrundmannBadge" style="display:none;">0 Aktiv</span>
+    </button>
+  </div>
+
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; padding:4px 2px;">
+    <button type="button" class="btn" id="manageEmpBtn" style="display:none;" onclick="openEmpModal()">🔐 Zugangsdaten &amp; Mitarbeiter (Chef)</button>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button type="button" class="btn btn-primary" id="installAppBtn" onclick="promptInstallApp()">📲 App installieren</button>
+      <button type="button" class="btn" onclick="copyShareLink()">🔗 Link für Team kopieren</button>
+    </div>
+  </div>
+</div>
+
+<!-- VIEW 1: ZEITERFASSUNG -->
+<div id="viewAnwesenheit" style="display:none;">
+  <div class="sub-nav">
+    <button type="button" class="btn btn-dark" onclick="goHome()">← Startseite</button>
+    <span class="sub-title">📅 Zeiterfassung &amp; Urlaub 2027</span>
+    <div style="display:flex; gap:6px; flex-wrap:wrap;">
+      <button type="button" class="btn btn-warn" onclick="openWishModal()">✉️ Urlaub beantragen</button>
+      <button type="button" class="btn btn-primary" id="chefRangeBtn" style="display:none;" onclick="openRangeModal()">+ Direkt eintragen (Chef)</button>
+      <button type="button" class="btn" onclick="window.print()">🖨️ PDF</button>
+    </div>
+  </div>
+
+  <div class="brush-bar" id="brushBar" style="display:none;">
+    <span style="font-size:0.78rem; font-weight:700; color:#475569; white-space:nowrap;">Chef-Direkteintrag:</span>
+    <button type="button" class="brush-btn b-U active" onclick="selectBrush('U', this)">U (Urlaub)</button>
+    <button type="button" class="brush-btn b-HU" onclick="selectBrush('½U', this)">½U (1/2 Urlaub)</button>
+    <button type="button" class="brush-btn b-K" onclick="selectBrush('K', this)">K (Krank)</button>
+    <button type="button" class="brush-btn b-S" onclick="selectBrush('S', this)">S (Schule)</button>
+    <button type="button" class="brush-btn b-DEL" onclick="selectBrush('', this)">✕ Löschen</button>
+  </div>
+
+  <div class="tabs">
+    <button type="button" class="tab active" onclick="switchAnwTab(0, this)">1. Quartal (Jan–Mär)</button>
+    <button type="button" class="tab" onclick="switchAnwTab(1, this)">2. Quartal (Apr–Jun)</button>
+    <button type="button" class="tab" onclick="switchAnwTab(2, this)">3. Quartal (Jul–Sep)</button>
+    <button type="button" class="tab" onclick="switchAnwTab(3, this)">4. Quartal (Okt–Dez)</button>
+    <button type="button" class="tab" onclick="switchAnwTab(4, this)">📊 Jahreskonto</button>
+    <button type="button" class="tab" id="wishTabBtn" onclick="switchAnwTab(5, this)">✉️ Urlaubswünsche</button>
+  </div>
+
+  <div>
+    <div class="alert-banner" id="overlapBanner"></div>
+    <div id="anwesenheitContent"></div>
+  </div>
+</div>
+
+<!-- VIEW 2: PLANUNG -->
+<div id="viewPlanung" style="display:none;">
+  <div class="sub-nav">
+    <button type="button" class="btn btn-dark" onclick="goHome()">← Startseite</button>
+    <span class="sub-title">📋 Planung – Wochenkalender</span>
+    <div style="display:flex; gap:6px;">
+      <button type="button" class="btn btn-primary" id="planungAddBtn" style="display:none;" onclick="openPlanJobModal()">+ Arbeit eintragen</button>
+      <button type="button" class="btn" onclick="window.print()">🖨️ PDF</button>
+    </div>
+  </div>
+
+  <div class="planung-dept-bar">
+    <button type="button" class="dept-switch-btn active" id="deptBtnTechnik" onclick="switchPlanDept('technik')">
+      <span class="dept-logo-box" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M5 17C5 11.5 9 8 14 8C19 8 23 11.5 23 17V20H19.5V16.5H16.5V20H11.5V16.5H8.5V20H5V17Z" fill="#0d5c63"/>
+          <path d="M7 11.5H21" stroke="#c97a16" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="9.5" cy="13.5" r="1.3" fill="#ffffff"/>
+          <circle cx="14" cy="13.5" r="1.3" fill="#ffffff"/>
+          <circle cx="18.5" cy="13.5" r="1.3" fill="#ffffff"/>
+        </svg>
+      </span>
+      <span>
+        <span class="dept-switch-title">Technik</span>
+        <span class="dept-switch-sub">Katrin, Medina • Azubi: Feryal, Saja, Hewler</span>
+      </span>
+    </button>
+
+    <button type="button" class="dept-switch-btn" id="deptBtnKeramik" onclick="switchPlanDept('keramik')">
+      <span class="dept-logo-box" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M8.5 5.5C6 5.5 4.5 7.8 5 11C5.4 13.5 6.8 15 7.5 18.5C8 21 9 23 10.3 23C11.5 23 12 20.2 14 20.2C16 20.2 16.5 23 17.7 23C19 23 20 21 20.5 18.5C21.2 15 22.6 13.5 23 11C23.5 7.8 22 5.5 19.5 5.5C17.3 5.5 15.8 6.8 14 6.8C12.2 6.8 10.7 5.5 8.5 5.5Z" fill="#0d5c63"/>
+          <path d="M9.2 9.2C10.5 8.3 12 8.3 13 9" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>
+        <span class="dept-switch-title">Keramik</span>
+        <span class="dept-switch-sub">Dagmar, Sabine, Kerstin</span>
+      </span>
+    </button>
+  </div>
+
+  <div class="plan-controls">
+    <div class="week-nav">
+      <button type="button" class="btn" onclick="shiftPlanWeek(-7)">◀ Vorherige Woche</button>
+      <input type="date" id="planWeekDate" onchange="setPlanAnchor(this.value)" style="padding:7px 10px; border-radius:8px; border:1px solid var(--line); font-weight:700;" />
+      <button type="button" class="btn" onclick="shiftPlanWeek(7)">Nächste Woche ▶</button>
+      <button type="button" class="btn" onclick="jumpToTodayPlan()">Heute</button>
+    </div>
+    <div class="crown-summary-bar" id="planSummaryBar"></div>
+  </div>
+
+  <div><div id="planungContent"></div></div>
+</div>
+
+<!-- VIEW 3: MATERIALBESTELLUNG -->
+<div id="viewMaterial" style="display:none;">
+  <div class="sub-nav">
+    <button type="button" class="btn btn-dark" onclick="goHome()">← Startseite</button>
+    <span class="sub-title">📦 Materialbestellung</span>
+    <div style="display:flex; gap:6px;">
+      <button type="button" class="btn btn-primary" onclick="openMaterialModal()">+ Material eintragen</button>
+      <button type="button" class="btn" onclick="window.print()">🖨️ PDF</button>
+    </div>
+  </div>
+  <div style="padding-top:12px;">
+    <div class="mat-container" style="margin-top:0;">
+      <div class="mat-filter-bar">
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <button type="button" class="btn btn-primary" id="matFilterOpenBtn" onclick="setMaterialFilter('OPEN')">⏳ Noch zu bestellen</button>
+          <button type="button" class="btn" id="matFilterOrderedBtn" onclick="setMaterialFilter('ORDERED')">✅ Bereits bestellt</button>
+          <button type="button" class="btn" id="matFilterAllBtn" onclick="setMaterialFilter('ALL')">Alle Einträge</button>
+        </div>
+        <div style="font-size:0.8rem; color:#475569; font-weight:700;" id="matCountInfo"></div>
+      </div>
+      <div id="materialListContent" style="display:flex; flex-direction:column; gap:10px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- VIEW 4: GRUNDMANN PARTNERLABOR (BIELEFELD) -->
+<div id="viewGrundmann" style="display:none;">
+  <div class="sub-nav">
+    <button type="button" class="btn btn-dark" onclick="goHome()">← Startseite</button>
+    <span class="sub-title">🏥 Grundmann Partnerlabor (Bielefeld)</span>
+    <div style="display:flex; gap:6px;">
+      <button type="button" class="btn" onclick="window.print()">🖨️ PDF</button>
+    </div>
+  </div>
+
+  <div class="mat-container">
+    <div class="partner-form-card">
+      <div style="font-size:1rem; font-weight:850; color:var(--primary-dark);">
+        📷 Arbeitsauftrag fotografieren &amp; Rücksendetermin eintragen
+      </div>
+
+      <div class="partner-grid-2">
+        <div class="form-row" style="margin-bottom:0;">
+          <label for="gTitleInput">Auftrag / Arbeit</label>
+          <input type="text" id="gTitleInput" placeholder="z. B. Modellguss / Arbeit #10244" />
+        </div>
+        <div class="form-row" style="margin-bottom:0;">
+          <label for="gDueDateInput">Wann soll die Arbeit bei uns sein? (Rücksendetermin)</label>
+          <input type="date" id="gDueDateInput" />
+        </div>
+      </div>
+
+      <div class="form-row" style="margin-bottom:0;">
+        <label for="gNoteInput">Notiz / Hinweise zur Arbeit (optional)</label>
+        <input type="text" id="gNoteInput" placeholder="z. B. Farbe, besondere Hinweise..." />
+      </div>
+
+      <div class="form-row" style="margin-bottom:0;">
+        <label for="gPhotoInput">📷 Arbeitsauftrag fotografieren / Foto hochladen</label>
+        <input type="file" id="gPhotoInput" accept="image/*" capture="environment" onchange="handleGrundmannPhoto(this)" />
+        <div id="gPhotoPreviewWrap" class="photo-preview-box" style="display:none;">
+          <img id="gPhotoPreviewImg" src="" alt="Auftrag Foto" />
+          <button type="button" class="btn btn-danger" style="padding:5px 9px; font-size:0.78rem;" onclick="clearGrundmannPhoto()">✕ Foto entfernen</button>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:8px; flex-wrap:wrap;">
+        <button type="button" class="btn btn-primary" onclick="saveGrundmannOrder()">💾 Auftrag &amp; Termin speichern</button>
+      </div>
+    </div>
+
+    <div id="grundmannListContent" style="display:flex; flex-direction:column; gap:10px;"></div>
+  </div>
+</div>
+
+<!-- MODAL: Keramik Fertig-Notiz eingeben -->
+<div class="modal-backdrop" id="keramikFinishModal">
+  <div class="modal">
+    <h2>✓ Keramik-Arbeit abschließen – Notiz</h2>
+    <input type="hidden" id="kfJobId" value="" />
+    <div class="form-row">
+      <label for="kfNoteInput">Notiz zur fertigen Arbeit (optional)</label>
+      <textarea id="kfNoteInput" rows="3" placeholder="z. B. Glasur fertig, Farbe A2 kontrolliert, bereit zur Abholung..."></textarea>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn" onclick="closeModal('keramikFinishModal')">Abbrechen</button>
+      <button type="button" class="btn btn-success" onclick="confirmKeramikFinishWithNote()">✅ Als Fertig speichern</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Planung Arbeit eintragen / bearbeiten -->
+<div class="modal-backdrop" id="planJobModal">
+  <div class="modal">
+    <h2 id="planJobModalTitle">Arbeit planen</h2>
+    <input type="hidden" id="pJobId" value="" />
+    <input type="hidden" id="pDept" value="technik" />
+    <div class="form-row">
+      <label>Mitarbeiter/in</label>
+      <select id="pEmp"></select>
+    </div>
+    <div class="form-row">
+      <label>Datum / Termin</label>
+      <input type="date" id="pDate" />
+    </div>
+    <div class="form-row">
+      <label>Praxis Name (Liste oder selber schreiben)</label>
+      <select id="pPraxisSelect" onchange="handlePraxisSelectChange()">
+        <option value="K.E">K.E</option>
+        <option value="Sü">Sü</option>
+        <option value="Dental 21 - Wall">Dental 21 - Wall</option>
+        <option value="Dental 21 - Altstadt">Dental 21 - Altstadt</option>
+        <option value="S/S">S/S</option>
+        <option value="Wardeh">Wardeh</option>
+        <option value="Badawie">Badawie</option>
+        <option value="Assis">Assis</option>
+        <option value="Drewes">Drewes</option>
+        <option value="Deine Zahnpraxis">Deine Zahnpraxis</option>
+        <option value="Bremersmile">Bremersmile</option>
+        <option value="__CUSTOM__">✏️ Andere Praxis selber schreiben...</option>
+      </select>
+      <input type="text" id="pPraxisCustom" placeholder="Praxis Name selber eingeben..." style="margin-top:6px; display:none;" />
+    </div>
+    <div class="form-row">
+      <label>Patienten Name</label>
+      <input type="text" id="pPatient" placeholder="z. B. Müller, Anna" />
+    </div>
+    <div class="form-row">
+      <label>Art von Arbeit</label>
+      <select id="pArt"></select>
+    </div>
+    <div class="form-row">
+      <label id="pCrownsLabel">Anzahl Kronen / Einheiten</label>
+      <input type="number" id="pCrowns" min="0" max="50" step="1" value="1" />
+    </div>
+    <div class="form-row">
+      <label>Bemerkung / Farbe / Uhrzeit (optional)</label>
+      <input type="text" id="pNote" placeholder="z. B. Farbe A2, Anprobe 11:00 Uhr" />
+    </div>
+    <div class="form-row" id="pStatusRow" style="display:none;">
+      <label>Status</label>
+      <select id="pDone">
+        <option value="false">⏳ In Arbeit / Offen</option>
+        <option value="true">✅ Fertiggestellt</option>
+      </select>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-danger" id="pDeleteBtn" style="display:none; margin-right:auto;" onclick="deletePlanJob()">🗑️ Löschen</button>
+      <button type="button" class="btn" onclick="closeModal('planJobModal')">Abbrechen</button>
+      <button type="button" class="btn btn-primary" onclick="savePlanJob()">Speichern</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Neues Material bestellen -->
+<div class="modal-backdrop" id="materialModal" onclick="if(event.target===this) closeModal('materialModal')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h2 style="margin:0;">📦 Materialbestellung</h2>
+      <button type="button" class="btn" style="padding:4px 9px; font-size:0.85rem;" onclick="closeModal('materialModal')">✕</button>
+    </div>
+    <div class="form-row">
+      <label>Produkt Name</label>
+      <input type="text" id="mName" placeholder="Produkt Name..." />
+    </div>
+    <div class="form-row">
+      <label>Artikel Nr. (optional)</label>
+      <input type="text" id="mArtNr" placeholder="Optional – kann leer bleiben..." />
+    </div>
+    <div class="form-row">
+      <label>Anzahl</label>
+      <input type="text" id="mQty" value="1" placeholder="Anzahl..." />
+    </div>
+    <div class="form-row">
+      <label>📷 Foto hochladen</label>
+      <input type="file" id="mPhotoInput" accept="image/*" onchange="handleMaterialPhoto(this)" />
+      <div id="mPhotoPreviewWrap" class="photo-preview-box" style="display:none;">
+        <img id="mPhotoPreviewImg" src="" alt="Vorschau" />
+        <button type="button" class="btn btn-danger" style="padding:5px 9px; font-size:0.78rem;" onclick="clearMaterialPhoto()">✕ Foto entfernen</button>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn" onclick="closeModal('materialModal')">Schließen</button>
+      <button type="button" class="btn btn-primary" id="mSubmitBtn" onclick="saveMaterialOrder()">Eintragen</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Foto Vollbild-Vorschau -->
+<div class="modal-backdrop" id="photoZoomModal" onclick="closeModal('photoZoomModal')">
+  <div class="modal" style="max-width:640px; text-align:center;" onclick="event.stopPropagation()">
+    <h2 id="zoomTitle">Foto-Vorschau</h2>
+    <img id="zoomImg" src="" alt="Foto" style="max-width:100%; max-height:65vh; border-radius:10px; border:1px solid var(--line);" />
+    <div class="modal-actions">
+      <button type="button" class="btn btn-dark" onclick="closeModal('photoZoomModal')">Schließen</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Urlaubswunsch beantragen -->
+<div class="modal-backdrop" id="wishModal">
+  <div class="modal">
+    <h2>✉️ Urlaubswunsch beantragen</h2>
+    <p style="font-size:0.82rem; color:#475569; margin-top:0;">
+      Dein Wunsch wird an <strong>Jörg</strong> und <strong>Husam</strong> gesendet. Nach Bestätigung erscheint er direkt im Kalender.
+    </p>
+    <div class="form-row">
+      <label>Mitarbeiter/in</label>
+      <select id="wishEmp"></select>
+    </div>
+    <div class="form-row">
+      <label>Art des Urlaubs</label>
+      <select id="wishType">
+        <option value="U">U – Urlaub (1,0 Tag)</option>
+        <option value="½U">½U – 1/2 Urlaub (Halber Tag, 0,5 Tage)</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label>Von Datum</label>
+      <input type="date" id="wishStart" min="2026-01-01" max="2028-12-31" />
+    </div>
+    <div class="form-row">
+      <label>Bis Datum</label>
+      <input type="date" id="wishEnd" min="2026-01-01" max="2028-12-31" />
+    </div>
+    <div class="form-row">
+      <label>Bemerkung (optional)</label>
+      <input type="text" id="wishNote" placeholder="z. B. Sommerurlaub..." />
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn" onclick="closeModal('wishModal')">Abbrechen</button>
+      <button type="button" class="btn btn-primary" id="wishSubmitBtn" onclick="submitVacationWish()">Wunsch absenden</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Zeitraum Urlaub (Direkteintrag durch Chef) -->
+<div class="modal-backdrop" id="rangeModal">
+  <div class="modal">
+    <h2>Urlaub / Abwesenheit direkt eintragen (Chef)</h2>
+    <div class="form-row">
+      <label>Mitarbeiter/in</label>
+      <select id="rangeEmp"></select>
+    </div>
+    <div class="form-row">
+      <label>Status</label>
+      <select id="rangeStatus">
+        <option value="U">U – Urlaub (1,0 Tag)</option>
+        <option value="½U">½U – 1/2 Urlaub (0,5 Tage)</option>
+        <option value="K">K – Krank</option>
+        <option value="S">S – Schule (Berufsschule)</option>
+        <option value="">✕ Zeitraum löschen</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label>Von Datum</label>
+      <input type="date" id="rangeStart" min="2026-01-01" max="2028-12-31" />
+    </div>
+    <div class="form-row">
+      <label>Bis Datum</label>
+      <input type="date" id="rangeEnd" min="2026-01-01" max="2028-12-31" />
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn" onclick="closeModal('rangeModal')">Abbrechen</button>
+      <button type="button" class="btn btn-primary" onclick="applyRange()">Speichern</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Mitarbeiter, Username & Passwort verwalten (nur Chef) -->
+<div class="modal-backdrop" id="empModal">
+  <div class="modal">
+    <h2>🔐 Mitarbeiter, Abteilung &amp; Passwörter</h2>
+    <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+      <input type="text" id="newEmpName" placeholder="Name" />
+      <select id="newEmpDept">
+        <option value="Chefs">Chefs</option>
+        <option value="Büro">Büro</option>
+        <option value="Keramik">Keramik</option>
+        <option value="Technik" selected>Technik</option>
+        <option value="Azubi">Azubi</option>
+      </select>
+      <input type="text" id="newEmpUser" placeholder="Username" />
+      <input type="text" id="newEmpPass" placeholder="Passwort" />
+    </div>
+    <div style="margin-bottom:10px; text-align:right;">
+      <button type="button" class="btn btn-primary" onclick="addEmployee()">+ Mitarbeiter hinzufügen</button>
+    </div>
+    <div id="empManageList" style="border:1px solid var(--line); border-radius:8px; max-height:300px; overflow-y:auto;"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn" onclick="closeModal('empModal')">Schließen</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<script>
+  const FIREBASE_CONFIG = {
+    databaseURL: "https://lloyd-dental-gmbh-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "lloyd-dental-gmbh"
+  };
+
+  const DEPARTMENT_ORDER = ["Chefs", "Büro", "Keramik", "Technik", "Azubi"];
+
+  const DEFAULT_ACCOUNTS = [
+    { name: "Jörg", dept: "Chefs", username: "joerg", password: "123", role: "chef" },
+    { name: "Husam", dept: "Chefs", username: "husam", password: "123", role: "chef" },
+    { name: "Astrid", dept: "Büro", username: "astrid", password: "123", role: "staff" },
+    { name: "Tina", dept: "Büro", username: "tina", password: "123", role: "staff" },
+    { name: "Nadine", dept: "Büro", username: "nadine", password: "123", role: "staff" },
+    { name: "Dagmar", dept: "Keramik", username: "dagmar", password: "123", role: "staff" },
+    { name: "Sabine", dept: "Keramik", username: "sabine", password: "123", role: "staff" },
+    { name: "Kerstin", dept: "Keramik", username: "kerstin", password: "123", role: "staff" },
+    { name: "Katrin", dept: "Technik", username: "katrin", password: "123", role: "staff" },
+    { name: "Medina", dept: "Technik", username: "medina", password: "123", role: "staff" },
+    { name: "Yvonne", dept: "Technik", username: "yvonne", password: "123", role: "staff" },
+    { name: "Feryal", dept: "Azubi", username: "feryal", password: "123", role: "staff" },
+    { name: "Saja", dept: "Azubi", username: "saja", password: "123", role: "staff" },
+    { name: "Hewler", dept: "Azubi", username: "hewler", password: "123", role: "staff" }
+  ];
+
+  const PRAXIS_LIST = [
+    "K.E",
+    "Sü",
+    "Dental 21 - Wall",
+    "Dental 21 - Altstadt",
+    "S/S",
+    "Wardeh",
+    "Badawie",
+    "Assis",
+    "Drewes",
+    "Deine Zahnpraxis",
+    "Bremersmile"
+  ];
+
+  const KERAMIK_STAFF = ["Dagmar", "Sabine", "Kerstin"];
+  const KERAMIK_WORKS = ["Keramik Verbl.", "Composition Verbl.", "Aufstellung", "Fertigstellung", "Rep."];
+
+  const TECHNIK_GROUPS = [
+    { dept: "Technik", members: ["Katrin", "Medina"] },
+    { dept: "Azubi", members: ["Feryal", "Saja", "Hewler"] }
+  ];
+  const TECHNIK_ALL_STAFF = ["Katrin", "Medina", "Feryal", "Saja", "Hewler"];
+  const TECHNIK_WORKS = [
+    "Aufstellung",
+    "Fertigstellung",
+    "Umstellung",
+    "Auf und Fertigstellung",
+    "Kronen",
+    "Brücke",
+    "TK primär",
+    "TK Sekundär + Mogu",
+    "Schiene"
+  ];
+
+  const MONTHS_DE = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"
+  ];
+  const WEEKDAYS_DE = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+
+  let currentSection = "start";
+  let currentPlanDept = "technik";
+  let anwTab = 0;
+  let currentBrush = "U";
+  let teamCode = "TEAM-2027";
+  let currentUserName = localStorage.getItem("lloyd_auth_name") || "";
+  let currentUsername = localStorage.getItem("lloyd_auth_username") || "";
+  let planAnchorIso = new Date().toISOString().slice(0, 10);
+  let materialFilter = "OPEN";
+  let pendingPhotoDataUrl = "";
+  let pendingGrundmannPhotoDataUrl = "";
+  let isSubmittingWish = false;
+  let db = null;
+  let dbRef = null;
+
+  let appData = {
+    accounts: JSON.parse(JSON.stringify(DEFAULT_ACCOUNTS)),
+    employees: DEFAULT_ACCOUNTS.map(a => a.name),
+    entries: {},
+    quotas: {},
+    notes: { q0: "", q1: "", q2: "", q3: "" },
+    vacationWishes: [],
+    keramikJobs: {},
+    technikJobs: {},
+    materialOrders: {},
+    grundmannOrders: {}
+  };
+
+  function isChef() {
+    if (!currentUserName) return false;
+    const acc = appData.accounts.find(a => a.name.toLowerCase() === currentUserName.toLowerCase());
+    if (acc && acc.role === "chef") return true;
+    return ["husam", "jörg", "joerg"].includes(currentUserName.toLowerCase());
+  }
+
+  function getTodayLocalIso() {
+    const now = new Date();
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  }
+
+  function generateWorkdays2027() {
+    const quarters = [
+      { title: "1. Quartal 2027 (Januar – März)", months: [0, 1, 2], days: [] },
+      { title: "2. Quartal 2027 (April – Juni)", months: [3, 4, 5], days: [] },
+      { title: "3. Quartal 2027 (Juli – September)", months: [6, 7, 8], days: [] },
+      { title: "4. Quartal 2027 (Oktober – Dezember)", months: [9, 10, 11], days: [] }
+    ];
+    const allDays = [];
+    for (let m = 0; m < 12; m++) {
+      const qIdx = Math.floor(m / 3);
+      const daysInMonth = new Date(2027, m + 1, 0).getDate();
+      for (let d = 1; d <= daysInMonth; d++) {
+        const dateObj = new Date(2027, m, d);
+        const dow = dateObj.getDay();
+        if (dow >= 1 && dow <= 5) {
+          const iso = `2027-${String(m + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+          const item = { iso, month: m, day: d, dow, wd: WEEKDAYS_DE[dow] };
+          quarters[qIdx].days.push(item);
+          allDays.push(item);
+        }
+      }
+    }
+    return { quarters, allDays };
+  }
+
+  const CALENDAR_2027 = generateWorkdays2027();
+
+  function normalizeJobsMap(raw, fallbackEmp, fallbackArt) {
+    const map = {};
+    if (!raw) return map;
+    const list = Array.isArray(raw) ? raw : (typeof raw === "object" ? Object.values(raw) : []);
+    list.forEach((item, idx) => {
+      if (!item || typeof item !== "object") return;
+      if (!item.praxis && !item.patient) return;
+      const cleanId = (item.id && String(item.id) !== "undefined" && String(item.id) !== "null")
+        ? String(item.id)
+        : `job_${idx}_${Date.now()}`;
+      let empName = item.emp || fallbackEmp;
+      if (empName === "Dagmer") empName = "Dagmar";
+      if (empName === "Kirsten") empName = "Kerstin";
+      map[cleanId] = { ...item, id: cleanId, emp: empName, art: item.art || fallbackArt, finishNote: item.finishNote || "" };
+    });
+    return map;
+  }
+
+  function normalizeMaterialOrders(raw) {
+    const map = {};
+    if (!raw) return map;
+    const list = Array.isArray(raw) ? raw : (typeof raw === "object" ? Object.values(raw) : []);
+    list.forEach((item, idx) => {
+      if (!item || typeof item !== "object" || !item.name) return;
+      const cleanId = (item.id && String(item.id) !== "undefined") ? String(item.id) : `mat_${idx}_${Date.now()}`;
+      map[cleanId] = { ...item, id: cleanId };
+    });
+    return map;
+  }
+
+  function normalizeGrundmannOrders(raw) {
+    const map = {};
+    if (!raw) return map;
+    const list = Array.isArray(raw) ? raw : (typeof raw === "object" ? Object.values(raw) : []);
+    list.forEach((item, idx) => {
+      if (!item || typeof item !== "object" || !item.title) return;
+      const cleanId = (item.id && String(item.id) !== "undefined") ? String(item.id) : `gm_${idx}_${Date.now()}`;
+      map[cleanId] = { ...item, id: cleanId, status: item.status || "open" };
+    });
+    return map;
+  }
+
+  function getGrundmannOrdersList() {
+    return Object.values(appData.grundmannOrders || {});
+  }
+
+  function normalizeVacationWishes(raw) {
+    if (!raw) return [];
+    const list = Array.isArray(raw) ? raw : (typeof raw === "object" ? Object.values(raw) : []);
+    return list
+      .filter(w => w && typeof w === "object" && w.emp && w.start && w.end)
+      .map((w, idx) => ({
+        ...w,
+        id: w.id ? String(w.id) : `wish_migrated_${idx}_${Date.now()}`,
+        status: w.status || "pending"
+      }));
+  }
+
+  function getMaterialOrdersList() {
+    return Object.values(appData.materialOrders || {});
+  }
+
+  function normalizeAccountsList(raw) {
+    if (!raw) return [];
+    const list = Array.isArray(raw) ? raw : (typeof raw === "object" ? Object.values(raw) : []);
+    return list.filter(a => a && typeof a === "object" && a.name);
+  }
+
+  function ensureIntegrity() {
+    const existingMap = new Map();
+    const rawAccounts = normalizeAccountsList(appData.accounts);
+    rawAccounts.forEach(a => {
+      if (a && a.name) {
+        let fixedName = String(a.name).trim();
+        if (!fixedName) return;
+        if (fixedName === "Dagmer") fixedName = "Dagmar";
+        if (fixedName === "Kirsten") fixedName = "Kerstin";
+        existingMap.set(fixedName.toLowerCase(), { ...a, name: fixedName });
+      }
+    });
+
+    const merged = [];
+    DEFAULT_ACCOUNTS.forEach(def => {
+      const prev = existingMap.get(def.name.toLowerCase());
+      if (prev) {
+        merged.push({
+          ...def,
+          username: String(prev.username || def.username).trim(),
+          password: String(prev.password !== undefined && prev.password !== null && prev.password !== "" ? prev.password : def.password).trim(),
+          dept: prev.dept || def.dept,
+          role: prev.role || def.role
+        });
+        existingMap.delete(def.name.toLowerCase());
+      } else {
+        merged.push({ ...def });
+      }
+    });
+
+    existingMap.forEach((extra) => {
+      merged.push({
+        name: extra.name,
+        dept: extra.dept || "Technik",
+        username: String(extra.username || extra.name).trim().toLowerCase(),
+        password: String(extra.password !== undefined && extra.password !== null && extra.password !== "" ? extra.password : "123").trim(),
+        role: extra.role || (extra.dept === "Chefs" ? "chef" : "staff")
+      });
+    });
+
+    appData.accounts = merged;
+    appData.employees = appData.accounts.map(a => a.name);
+
+    if (appData.entries && typeof appData.entries === "object") {
+      Object.keys(appData.entries).forEach(k => {
+        if (k.startsWith("Dagmer_")) {
+          const newKey = "Dagmar_" + k.slice(7);
+          if (!appData.entries[newKey]) appData.entries[newKey] = appData.entries[k];
+          delete appData.entries[k];
+        }
+        if (k.startsWith("Kirsten_")) {
+          const newKey = "Kerstin_" + k.slice(8);
+          if (!appData.entries[newKey]) appData.entries[newKey] = appData.entries[k];
+          delete appData.entries[k];
+        }
+      });
+    }
+
+    appData.vacationWishes = normalizeVacationWishes(appData.vacationWishes);
+    appData.keramikJobs = normalizeJobsMap(appData.keramikJobs, "Dagmar", "Keramik Verbl.");
+    appData.technikJobs = normalizeJobsMap(appData.technikJobs, "Katrin", "Aufstellung");
+    appData.materialOrders = normalizeMaterialOrders(appData.materialOrders);
+    appData.grundmannOrders = normalizeGrundmannOrders(appData.grundmannOrders);
+  }
+
+  function showLoginError(msg) {
+    const errBox = document.getElementById("loginErrorMsg");
+    if (errBox) {
+      if (msg) {
+        errBox.textContent = msg;
+        errBox.style.display = "block";
+      } else {
+        errBox.textContent = "";
+        errBox.style.display = "none";
+      }
+    }
+    if (msg) {
+      try { alert(msg); } catch (e) {}
+    }
+  }
+
+  function loginWithCredentials() {
+    showLoginError("");
+    const uInp = String(document.getElementById("loginUsernameInput").value || "").trim().toLowerCase();
+    const pInp = String(document.getElementById("loginPasswordInput").value || "").trim();
+
+    if (!uInp || !pInp) {
+      showLoginError("Bitte Benutzername und Passwort eingeben.");
+      return;
+    }
+
+    if (!appData.accounts || appData.accounts.length === 0) {
+      appData.accounts = JSON.parse(JSON.stringify(DEFAULT_ACCOUNTS));
+    }
+
+    const account = appData.accounts.find(a => {
+      const u = String(a.username || "").trim().toLowerCase();
+      const n = String(a.name || "").trim().toLowerCase();
+      const p = String(a.password !== undefined && a.password !== null ? a.password : "123").trim();
+      return (u === uInp || n === uInp) && p === pInp;
+    });
+
+    if (!account) {
+      showLoginError("Benutzername oder Passwort ist falsch (Standard-Passwort ist 123).");
+      return;
+    }
+
+    currentUserName = account.name;
+    currentUsername = account.username;
+    localStorage.setItem("lloyd_auth_name", account.name);
+    localStorage.setItem("lloyd_auth_username", account.username);
+    document.getElementById("loginPasswordInput").value = "";
+    refreshEmployeeSelectors();
+    updateAuthUI();
+  }
+
+  function logoutUser() {
+    currentUserName = "";
+    currentUsername = "";
+    localStorage.removeItem("lloyd_auth_name");
+    localStorage.removeItem("lloyd_auth_username");
+    document.getElementById("loginUsernameInput").value = "";
+    document.getElementById("loginPasswordInput").value = "";
+    updateAuthUI();
+  }
+
+  function updateAuthUI() {
+    const badge = document.getElementById("loggedInBadge");
+    const loginFormArea = document.getElementById("loginFormArea");
+    const welcomeArea = document.getElementById("welcomeArea");
+    const nameDisp = document.getElementById("welcomeNameDisplay");
+    const userDisp = document.getElementById("welcomeUserDisplay");
+    const roleBadge = document.getElementById("welcomeRoleBadge");
+    const chefRangeBtn = document.getElementById("chefRangeBtn");
+    const manageEmpBtn = document.getElementById("manageEmpBtn");
+    const brushBar = document.getElementById("brushBar");
+    const planAddBtn = document.getElementById("planungAddBtn");
+
+    if (currentUserName) {
+      if (currentUserName === "Dagmer") currentUserName = "Dagmar";
+      if (currentUserName === "Kirsten") currentUserName = "Kerstin";
+
+      loginFormArea.style.display = "none";
+      welcomeArea.style.display = "flex";
+      nameDisp.textContent = `👋 Hallo, ${currentUserName}!`;
+      userDisp.textContent = `Benutzername: ${currentUsername}`;
+
+      if (isChef()) {
+        badge.textContent = `👑 Chef: ${currentUserName}`;
+        roleBadge.textContent = "Chef-Zugang (Genehmigung aktiv)";
+        roleBadge.className = "role-badge role-chef";
+        chefRangeBtn.style.display = "inline-flex";
+        manageEmpBtn.style.display = "inline-flex";
+        if (planAddBtn) planAddBtn.style.display = "inline-flex";
+        if (currentSection === "anwesenheit" && anwTab < 4) brushBar.style.display = "flex";
+        else brushBar.style.display = "none";
+      } else {
+        badge.textContent = `👤 ${currentUserName}`;
+        roleBadge.textContent = "Mitarbeiter";
+        roleBadge.className = "role-badge role-staff";
+        chefRangeBtn.style.display = "none";
+        manageEmpBtn.style.display = "none";
+        if (planAddBtn) planAddBtn.style.display = "none";
+        brushBar.style.display = "none";
+      }
+    } else {
+      badge.textContent = "Nicht angemeldet";
+      loginFormArea.style.display = "block";
+      welcomeArea.style.display = "none";
+      chefRangeBtn.style.display = "none";
+      manageEmpBtn.style.display = "none";
+      if (planAddBtn) planAddBtn.style.display = "none";
+      brushBar.style.display = "none";
+    }
+
+    const pendingCount = appData.vacationWishes.filter(w => w.status === "pending").length;
+    const startBadge = document.getElementById("startWishBadge");
+    const wishTabBtn = document.getElementById("wishTabBtn");
+    if (pendingCount > 0) {
+      startBadge.style.display = "inline-block";
+      startBadge.textContent = `${pendingCount} Wunsch${pendingCount > 1 ? "e" : ""}`;
+      wishTabBtn.textContent = `✉️ Urlaubswünsche (${pendingCount})`;
+    } else {
+      startBadge.style.display = "none";
+      wishTabBtn.textContent = `✉️ Urlaubswünsche`;
+    }
+
+    const openMatCount = getMaterialOrdersList().filter(m => m.status !== "ordered").length;
+    const matBadge = document.getElementById("startMaterialBadge");
+    if (openMatCount > 0) {
+      matBadge.style.display = "inline-block";
+      matBadge.textContent = `${openMatCount} Offen`;
+    } else {
+      matBadge.style.display = "none";
+    }
+
+    const activeGmCount = getGrundmannOrdersList().filter(g => g.status !== "completed").length;
+    const gmBadge = document.getElementById("startGrundmannBadge");
+    if (gmBadge) {
+      if (activeGmCount > 0) {
+        gmBadge.style.display = "inline-block";
+        gmBadge.textContent = `${activeGmCount} Aktiv`;
+      } else {
+        gmBadge.style.display = "none";
+      }
+    }
+  }
+
+  function refreshEmployeeSelectors() {
+    const rangeSel = document.getElementById("rangeEmp");
+    const wishSel = document.getElementById("wishEmp");
+    rangeSel.innerHTML = "";
+    wishSel.innerHTML = "";
+
+    const visibleAccounts = isChef()
+      ? appData.accounts
+      : appData.accounts.filter(a => a.name === currentUserName);
+
+    DEPARTMENT_ORDER.forEach(dept => {
+      const members = visibleAccounts.filter(a => (a.dept || "Technik") === dept);
+      if (members.length === 0) return;
+
+      const g1 = document.createElement("optgroup");
+      g1.label = dept;
+      const g2 = document.createElement("optgroup");
+      g2.label = dept;
+
+      members.forEach(acc => {
+        const o1 = document.createElement("option");
+        o1.value = acc.name; o1.textContent = acc.name;
+        g1.appendChild(o1);
+
+        const o2 = document.createElement("option");
+        o2.value = acc.name; o2.textContent = acc.name;
+        g2.appendChild(o2);
+
+        if (appData.quotas[acc.name] === undefined) appData.quotas[acc.name] = 30;
+      });
+
+      rangeSel.appendChild(g1);
+      wishSel.appendChild(g2);
+    });
+  }
+
+  function renderSectionView(sec) {
+    currentSection = sec;
+    document.getElementById("viewStart").style.display = sec === "start" ? "flex" : "none";
+    document.getElementById("viewAnwesenheit").style.display = sec === "anwesenheit" ? "block" : "none";
+    document.getElementById("viewPlanung").style.display = sec === "planung" ? "block" : "none";
+    document.getElementById("viewMaterial").style.display = sec === "material" ? "block" : "none";
+    document.getElementById("viewGrundmann").style.display = sec === "grundmann" ? "block" : "none";
+    updateAuthUI();
+    if (sec === "anwesenheit") renderAnwesenheit();
+    if (sec === "planung") renderPlanung();
+    if (sec === "material") renderMaterial();
+    if (sec === "grundmann") renderGrundmann();
+  }
+
+  function openSection(sec, skipHistory) {
+    if (sec !== "start" && !currentUserName) {
+      alert("Bitte melde dich zuerst auf der Startseite mit deinem Benutzernamen und Passwort an.");
+      return;
+    }
+    if (!skipHistory && sec !== currentSection) {
+      try {
+        if (sec === "start") history.pushState({ section: "start" }, "", "#start");
+        else history.pushState({ section: sec }, "", "#" + sec);
+      } catch (e) {}
+    }
+    renderSectionView(sec);
+    window.scrollTo(0, 0);
+  }
+
+  function goHome() {
+    if (currentSection !== "start") openSection("start");
+  }
+
+  window.addEventListener("popstate", () => {
+    const openBackdrop = document.querySelector(".modal-backdrop.open");
+    if (openBackdrop) {
+      openBackdrop.classList.remove("open");
+      return;
+    }
+    if (currentSection !== "start") {
+      renderSectionView("start");
+      window.scrollTo(0, 0);
+    }
+  });
+
+  function init() {
+    document.getElementById("planWeekDate").value = planAnchorIso;
+    const cached = localStorage.getItem("urlaub2027_cache_" + teamCode);
+    if (cached) {
+      try {
+        appData = { ...appData, ...JSON.parse(cached) };
+      } catch (e) {}
+    }
+    ensureIntegrity();
+    refreshEmployeeSelectors();
+    updateAuthUI();
+    initFirebase();
+  }
+
+  function initFirebase() {
+    const dot = document.getElementById("syncDot");
+    const txt = document.getElementById("syncText");
+    try {
+      if (!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
+      db = firebase.database();
+      dbRef = db.ref("urlaubsplaner_2027/" + teamCode);
+
+      dbRef.on("value", (snapshot) => {
+        const val = snapshot.val();
+        if (val) {
+          const cloudAccounts = normalizeAccountsList(val.accounts);
+          if (cloudAccounts.length > 0) appData.accounts = cloudAccounts;
+          appData.entries = val.entries || {};
+          appData.quotas = val.quotas || {};
+          appData.notes = val.notes || { q0: "", q1: "", q2: "", q3: "" };
+          appData.vacationWishes = normalizeVacationWishes(val.vacationWishes);
+          appData.keramikJobs = normalizeJobsMap(val.keramikJobs, "Dagmar", "Keramik Verbl.");
+          appData.technikJobs = normalizeJobsMap(val.technikJobs, "Katrin", "Aufstellung");
+          appData.materialOrders = normalizeMaterialOrders(val.materialOrders);
+          appData.grundmannOrders = normalizeGrundmannOrders(val.grundmannOrders);
+          ensureIntegrity();
+          localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+        } else {
+          syncToCloud();
+        }
+        refreshEmployeeSelectors();
+        updateAuthUI();
+        if (document.getElementById("empModal").classList.contains("open")) renderEmpList();
+        dot.className = "dot live";
+        txt.textContent = "Live verbunden";
+        if (currentSection === "anwesenheit") renderAnwesenheit();
+        if (currentSection === "planung") renderPlanung();
+        if (currentSection === "material") renderMaterial();
+        if (currentSection === "grundmann") renderGrundmann();
+      }, () => {
+        dot.className = "dot err";
+        txt.textContent = "Offline / Keine Rechte";
+      });
+    } catch (e) {
+      dot.className = "dot err";
+      txt.textContent = "Verbindungsfehler";
+    }
+  }
+
+  function syncToCloud() {
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.set(appData).catch(e => console.error(e));
+  }
+
+  function switchPlanDept(deptKey) {
+    currentPlanDept = deptKey === "keramik" ? "keramik" : "technik";
+    document.getElementById("deptBtnTechnik").classList.toggle("active", currentPlanDept === "technik");
+    document.getElementById("deptBtnKeramik").classList.toggle("active", currentPlanDept === "keramik");
+    renderPlanung();
+  }
+
+  function getWeekDaysFromAnchor(anchorStr) {
+    const parts = anchorStr.split("-").map(Number);
+    const dt = new Date(parts[0], parts[1] - 1, parts[2]);
+    const day = dt.getDay();
+    const diffToMon = (day === 0 ? -6 : 1 - day);
+    const monday = new Date(dt);
+    monday.setDate(dt.getDate() + diffToMon);
+
+    const week = [];
+    for (let i = 0; i < 5; i++) {
+      const cur = new Date(monday);
+      cur.setDate(monday.getDate() + i);
+      const iso = `${cur.getFullYear()}-${String(cur.getMonth() + 1).padStart(2, "0")}-${String(cur.getDate()).padStart(2, "0")}`;
+      week.push({
+        iso,
+        label: `${WEEKDAYS_DE[cur.getDay()]} ${String(cur.getDate()).padStart(2, "0")}.${String(cur.getMonth() + 1).padStart(2, "0")}.${cur.getFullYear()}`
+      });
+    }
+    return week;
+  }
+
+  function setPlanAnchor(val) {
+    if (!val) return;
+    planAnchorIso = val;
+    renderPlanung();
+  }
+
+  function shiftPlanWeek(days) {
+    const parts = planAnchorIso.split("-").map(Number);
+    const dt = new Date(parts[0], parts[1] - 1, parts[2]);
+    dt.setDate(dt.getDate() + days);
+    planAnchorIso = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`;
+    document.getElementById("planWeekDate").value = planAnchorIso;
+    renderPlanung();
+  }
+
+  function jumpToTodayPlan() {
+    planAnchorIso = getTodayLocalIso();
+    document.getElementById("planWeekDate").value = planAnchorIso;
+    renderPlanung();
+  }
+
+  function handlePraxisSelectChange() {
+    const sel = document.getElementById("pPraxisSelect");
+    const customInp = document.getElementById("pPraxisCustom");
+    if (sel.value === "__CUSTOM__") {
+      customInp.style.display = "block";
+      customInp.focus();
+    } else {
+      customInp.style.display = "none";
+      customInp.value = "";
+    }
+  }
+
+  function setPraxisInputs(praxisVal) {
+    const sel = document.getElementById("pPraxisSelect");
+    const customInp = document.getElementById("pPraxisCustom");
+    if (praxisVal && PRAXIS_LIST.includes(praxisVal)) {
+      sel.value = praxisVal;
+      customInp.style.display = "none";
+      customInp.value = "";
+    } else if (praxisVal) {
+      sel.value = "__CUSTOM__";
+      customInp.style.display = "block";
+      customInp.value = praxisVal;
+    } else {
+      sel.value = PRAXIS_LIST[0];
+      customInp.style.display = "none";
+      customInp.value = "";
+    }
+  }
+
+  function getPraxisValue() {
+    const sel = document.getElementById("pPraxisSelect");
+    const customInp = document.getElementById("pPraxisCustom");
+    if (sel.value === "__CUSTOM__") return customInp.value.trim();
+    return sel.value.trim();
+  }
+
+  function populatePlanModalFields(deptKey, selectedEmp = "", selectedArt = "") {
+    const empSel = document.getElementById("pEmp");
+    const artSel = document.getElementById("pArt");
+    document.getElementById("pDept").value = deptKey;
+
+    if (deptKey === "keramik") {
+      empSel.innerHTML = KERAMIK_STAFF.map(e => `<option value="${e}">${e}</option>`).join("");
+      artSel.innerHTML = KERAMIK_WORKS.map(a => `<option value="${a}">${a}</option>`).join("");
+      document.getElementById("pCrownsLabel").textContent = "Anzahl Kronen (zu verblenden)";
+      empSel.value = KERAMIK_STAFF.includes(selectedEmp) ? selectedEmp : "Dagmar";
+      artSel.value = KERAMIK_WORKS.includes(selectedArt) ? selectedArt : "Keramik Verbl.";
+    } else {
+      empSel.innerHTML = TECHNIK_GROUPS.map(g =>
+        `<optgroup label="${g.dept}">${g.members.map(m => `<option value="${m}">${m}</option>`).join("")}</optgroup>`
+      ).join("");
+      artSel.innerHTML = TECHNIK_WORKS.map(a => `<option value="${a}">${a}</option>`).join("");
+      document.getElementById("pCrownsLabel").textContent = "Anzahl Einheiten / Kronen (optional)";
+      empSel.value = TECHNIK_ALL_STAFF.includes(selectedEmp) ? selectedEmp : "Katrin";
+      artSel.value = TECHNIK_WORKS.includes(selectedArt) ? selectedArt : "Aufstellung";
+    }
+  }
+
+  function openPlanJobModal(emp = "", dateIso = "", jobId = "") {
+    if (!isChef()) return;
+    const deptKey = currentPlanDept === "keramik" ? "keramik" : "technik";
+    const store = deptKey === "keramik" ? appData.keramikJobs : appData.technikJobs;
+    const cleanJobId = String(jobId || "").trim();
+    document.getElementById("pJobId").value = cleanJobId;
+
+    if (cleanJobId && store && store[cleanJobId]) {
+      const job = store[cleanJobId];
+      populatePlanModalFields(deptKey, job.emp, job.art);
+      document.getElementById("planJobModalTitle").textContent =
+        deptKey === "keramik" ? "Keramik-Arbeit bearbeiten" : "Technik-Arbeit bearbeiten";
+      document.getElementById("pDate").value = job.date;
+      setPraxisInputs(job.praxis || "");
+      document.getElementById("pPatient").value = job.patient || "";
+      document.getElementById("pCrowns").value = job.crowns !== undefined ? job.crowns : 1;
+      document.getElementById("pNote").value = job.note || "";
+      document.getElementById("pDone").value = job.done ? "true" : "false";
+      document.getElementById("pStatusRow").style.display = "block";
+      document.getElementById("pDeleteBtn").style.display = "inline-block";
+    } else {
+      populatePlanModalFields(deptKey, emp, "");
+      document.getElementById("planJobModalTitle").textContent =
+        deptKey === "keramik" ? "Neue Keramik-Arbeit eintragen" : "Neue Technik-Arbeit eintragen";
+      document.getElementById("pDate").value = dateIso || planAnchorIso;
+      setPraxisInputs("");
+      document.getElementById("pPatient").value = "";
+      document.getElementById("pCrowns").value = 1;
+      document.getElementById("pNote").value = "";
+      document.getElementById("pDone").value = "false";
+      document.getElementById("pStatusRow").style.display = "none";
+      document.getElementById("pDeleteBtn").style.display = "none";
+    }
+    openModal("planJobModal");
+  }
+
+  function savePlanJob() {
+    if (!isChef()) return;
+    const deptKey = document.getElementById("pDept").value === "keramik" ? "keramik" : "technik";
+    const collectionKey = deptKey === "keramik" ? "keramikJobs" : "technikJobs";
+    const existingId = String(document.getElementById("pJobId").value || "").trim();
+    const emp = document.getElementById("pEmp").value;
+    const date = document.getElementById("pDate").value;
+    const praxis = getPraxisValue();
+    const patient = document.getElementById("pPatient").value.trim();
+    const art = document.getElementById("pArt").value;
+    const crowns = parseInt(document.getElementById("pCrowns").value, 10) || 0;
+    const note = document.getElementById("pNote").value.trim();
+    const done = document.getElementById("pDone").value === "true";
+
+    if (!praxis || !patient || !date) {
+      alert("Bitte Datum, Praxis Name und Patienten Name eingeben.");
+      return;
+    }
+
+    closeModal("planJobModal");
+    if (!appData[collectionKey] || typeof appData[collectionKey] !== "object") appData[collectionKey] = {};
+
+    const prefix = deptKey === "keramik" ? "kj_" : "tj_";
+    const jobId = existingId || (prefix + Date.now() + "_" + Math.random().toString(36).slice(2, 6));
+    const prevFinishNote = (existingId && appData[collectionKey][existingId] && appData[collectionKey][existingId].finishNote) || "";
+    const jobObj = {
+      id: jobId, emp, date, praxis, patient, art, crowns, note,
+      done: existingId ? done : false,
+      finishNote: done ? prevFinishNote : "",
+      createdBy: currentUserName || "Team"
+    };
+
+    appData[collectionKey][jobId] = jobObj;
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child(`${collectionKey}/${jobId}`).set(jobObj).catch(e => console.error(e));
+    renderPlanung();
+  }
+
+  function deletePlanJob() {
+    if (!isChef()) return;
+    const deptKey = document.getElementById("pDept").value === "keramik" ? "keramik" : "technik";
+    const collectionKey = deptKey === "keramik" ? "keramikJobs" : "technikJobs";
+    const id = String(document.getElementById("pJobId").value || "").trim();
+    closeModal("planJobModal");
+    if (!id) return;
+
+    if (appData[collectionKey] && appData[collectionKey][id]) delete appData[collectionKey][id];
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child(`${collectionKey}/${id}`).remove().catch(e => console.error(e));
+    renderPlanung();
+  }
+
+  function handleKeramikFinishClick(jobId) {
+    if (!appData.keramikJobs || !appData.keramikJobs[jobId]) return;
+    const job = appData.keramikJobs[jobId];
+    if (!isChef() && currentUserName !== job.emp) {
+      alert("Du kannst nur deine eigenen Keramik-Arbeiten als fertig markieren.");
+      return;
+    }
+    if (job.done) {
+      job.done = false;
+      job.finishNote = "";
+      localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+      if (dbRef) dbRef.child(`keramikJobs/${jobId}`).set(job).catch(e => console.error(e));
+      renderPlanung();
+      return;
+    }
+    document.getElementById("kfJobId").value = jobId;
+    document.getElementById("kfNoteInput").value = job.finishNote || "";
+    openModal("keramikFinishModal");
+    setTimeout(() => document.getElementById("kfNoteInput").focus(), 100);
+  }
+
+  function confirmKeramikFinishWithNote() {
+    const jobId = document.getElementById("kfJobId").value;
+    const noteText = document.getElementById("kfNoteInput").value.trim();
+    closeModal("keramikFinishModal");
+    if (!jobId || !appData.keramikJobs || !appData.keramikJobs[jobId]) return;
+
+    const job = appData.keramikJobs[jobId];
+    job.done = true;
+    job.finishNote = noteText;
+    job.completedBy = currentUserName || job.emp;
+
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child(`keramikJobs/${jobId}`).set(job).catch(e => console.error(e));
+    renderPlanung();
+  }
+
+  function renderPlanung() {
+    const container = document.getElementById("planungContent");
+    const summaryBar = document.getElementById("planSummaryBar");
+    const weekDays = getWeekDaysFromAnchor(planAnchorIso);
+    const weekIsos = new Set(weekDays.map(w => w.iso));
+    const isKeramik = currentPlanDept === "keramik";
+    const jobsMap = isKeramik ? (appData.keramikJobs || {}) : (appData.technikJobs || {});
+    const allJobs = Object.values(jobsMap);
+
+    let totalWeekUnits = 0;
+    let openWeekUnits = 0;
+    allJobs.forEach(j => {
+      if (weekIsos.has(j.date)) {
+        const c = parseInt(j.crowns, 10) || 0;
+        totalWeekUnits += c;
+        if (!j.done) openWeekUnits += c;
+      }
+    });
+
+    const metricLabel = isKeramik ? "Kronen" : "Einheiten";
+    summaryBar.innerHTML = `
+      <span class="crown-pill">📊 ${isKeramik ? "Keramik" : "Technik"} • ${metricLabel} (Woche): ${totalWeekUnits}</span>
+      <span class="crown-pill" style="background:#fef3c7; color:#92400e; border-color:#fcd34d;">⏳ Noch offen: ${openWeekUnits}</span>
+    `;
+
+    let html = `<div class="table-wrap"><table><thead><tr><th class="plan-emp">${isKeramik ? "Keramik" : "Abteilung / Team"}</th>`;
+    weekDays.forEach(wd => { html += `<th class="plan-th">${wd.label}</th>`; });
+    html += `</tr></thead><tbody>`;
+
+    const chefMode = isChef();
+    const groups = isKeramik ? [{ dept: "Keramik", members: KERAMIK_STAFF }] : TECHNIK_GROUPS;
+
+    groups.forEach(grp => {
+      html += `<tr class="dept-banner-row"><td colspan="${weekDays.length + 1}"><span class="dept-sticky-label">${grp.dept}</span></td></tr>`;
+
+      grp.members.forEach(emp => {
+        const empWeekUnits = allJobs
+          .filter(j => j.emp === emp && weekIsos.has(j.date))
+          .reduce((sum, j) => sum + (parseInt(j.crowns, 10) || 0), 0);
+
+        html += `<tr class="emp-row"><td class="plan-emp">${emp}<br/><span class="emp-crown-total">${isKeramik ? "🦷" : "🛠️"} ${empWeekUnits} ${metricLabel}</span></td>`;
+        weekDays.forEach(wd => {
+          const absence = appData.entries[`${emp}_${wd.iso}`];
+          const jobs = allJobs.filter(j => j.emp === emp && j.date === wd.iso);
+
+          html += `<td class="plan-cell ${absence ? 'absent-day' : ''}">`;
+          if (absence) html += `<span class="absent-tag">⚠️ Abwesend (${absence})</span>`;
+          jobs.forEach(job => {
+            const cCount = parseInt(job.crowns, 10) || 0;
+            const clickAttr = chefMode ? `onclick="openPlanJobModal('${emp}', '${wd.iso}', '${job.id}')"` : `style="cursor:default;"`;
+            const unitText = isKeramik ? `${cCount} ${cCount === 1 ? "Krone" : "Kronen"}` : `${cCount} ${cCount === 1 ? "Einheit" : "Einheiten"}`;
+            const canToggleKeramikDone = isKeramik && (chefMode || currentUserName === emp);
+            const doneBtnHtml = canToggleKeramikDone
+              ? `<button type="button" class="done-toggle-btn ${job.done ? 'is-done' : ''}" onclick="event.stopPropagation(); handleKeramikFinishClick('${job.id}')">${job.done ? "↺ Wieder öffnen" : "✓ Fertig"}</button>`
+              : "";
+            const finishNoteHtml = (isKeramik && job.done && job.finishNote)
+              ? `<div class="j-finish-note">📝 Notiz: ${job.finishNote}</div>`
+              : "";
+
+            html += `
+              <div class="job-chip ${job.done ? 'done' : ''}">
+                <span class="j-praxis" ${clickAttr}>${job.done ? '✅ ' : ''}${job.praxis}</span>
+                <span class="j-patient" ${clickAttr}>Pat.: ${job.patient}</span>
+                <div class="job-tags">
+                  <span class="j-art">${job.art}</span>
+                  ${cCount > 0 ? `<span class="j-crowns">🦷 ${unitText}</span>` : ""}
+                </div>
+                ${job.note ? `<div style="font-size:0.7rem;color:#64748b;margin-top:3px;">${job.note}</div>` : ""}
+                ${finishNoteHtml}
+                ${doneBtnHtml}
+              </div>
+            `;
+          });
+          if (chefMode) html += `<button type="button" class="add-cell-btn" onclick="openPlanJobModal('${emp}', '${wd.iso}')">+ Eintrag</button>`;
+          html += `</td>`;
+        });
+        html += `</tr>`;
+      });
+    });
+
+    html += `</tbody></table></div>`;
+    container.innerHTML = html;
+  }
+
+  // --- GRUNDMANN PARTNERLABOR (BIELEFELD) ---
+  function handleGrundmannPhoto(input) {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = new Image();
+      img.onload = function() {
+        const maxDim = 900;
+        let w = img.width, h = img.height;
+        if (w > maxDim || h > maxDim) {
+          if (w > h) { h = Math.round((h * maxDim) / w); w = maxDim; }
+          else { w = Math.round((w * maxDim) / h); h = maxDim; }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+        pendingGrundmannPhotoDataUrl = canvas.toDataURL("image/jpeg", 0.82);
+        document.getElementById("gPhotoPreviewImg").src = pendingGrundmannPhotoDataUrl;
+        document.getElementById("gPhotoPreviewWrap").style.display = "flex";
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function clearGrundmannPhoto() {
+    pendingGrundmannPhotoDataUrl = "";
+    document.getElementById("gPhotoInput").value = "";
+    document.getElementById("gPhotoPreviewImg").src = "";
+    document.getElementById("gPhotoPreviewWrap").style.display = "none";
+  }
+
+  function saveGrundmannOrder() {
+    const title = document.getElementById("gTitleInput").value.trim();
+    const dueDate = document.getElementById("gDueDateInput").value;
+    const note = document.getElementById("gNoteInput").value.trim();
+
+    if (!title) {
+      alert("Bitte den Auftrag / die Arbeit eintragen.");
+      return;
+    }
+
+    if (!appData.grundmannOrders || typeof appData.grundmannOrders !== "object") appData.grundmannOrders = {};
+    const id = "gm_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6);
+    const todayStr = new Date().toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" });
+
+    const orderObj = {
+      id,
+      title,
+      dueDate: dueDate || "",
+      note,
+      photo: pendingGrundmannPhotoDataUrl || "",
+      status: "open",
+      createdBy: currentUserName || "Team",
+      createdDate: todayStr,
+      createdAt: Date.now()
+    };
+
+    appData.grundmannOrders[id] = orderObj;
+    document.getElementById("gTitleInput").value = "";
+    document.getElementById("gDueDateInput").value = "";
+    document.getElementById("gNoteInput").value = "";
+    clearGrundmannPhoto();
+
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("grundmannOrders/" + id).set(orderObj).catch(e => console.error(e));
+    updateAuthUI();
+    renderGrundmann();
+  }
+
+  function toggleGrundmannStatus(id) {
+    const item = appData.grundmannOrders && appData.grundmannOrders[id];
+    if (!item) return;
+    item.status = item.status === "completed" ? "open" : "completed";
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("grundmannOrders/" + id).set(item).catch(e => console.error(e));
+    updateAuthUI();
+    renderGrundmann();
+  }
+
+  function deleteGrundmannOrder(id) {
+    const item = appData.grundmannOrders && appData.grundmannOrders[id];
+    if (!item) return;
+    if (!isChef() && item.createdBy !== currentUserName) {
+      alert("Nur der Ersteller oder ein Chef kann diesen Auftrag löschen.");
+      return;
+    }
+    delete appData.grundmannOrders[id];
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("grundmannOrders/" + id).remove().catch(e => console.error(e));
+    updateAuthUI();
+    renderGrundmann();
+  }
+
+  function openGrundmannPhotoZoom(id) {
+    const item = appData.grundmannOrders && appData.grundmannOrders[id];
+    if (!item || !item.photo) return;
+    document.getElementById("zoomTitle").textContent = item.title;
+    document.getElementById("zoomImg").src = item.photo;
+    openModal("photoZoomModal");
+  }
+
+  function renderGrundmann() {
+    const container = document.getElementById("grundmannListContent");
+    const list = getGrundmannOrdersList().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+
+    if (list.length === 0) {
+      container.innerHTML = `
+        <div class="mat-card" style="justify-content:center; text-align:center; color:#64748b; padding:24px;">
+          Noch keine Aufträge für Grundmann Zahntechnik (Bielefeld) eingetragen.
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = list.map(item => {
+      const done = item.status === "completed";
+      const canDelete = isChef() || item.createdBy === currentUserName;
+      return `
+        <div class="mat-card ${done ? "ordered" : ""}">
+          ${item.photo ? `<img class="mat-thumb" src="${item.photo}" alt="Auftrag Foto" onclick="openGrundmannPhotoZoom('${item.id}')" />` : ""}
+          <div class="mat-body">
+            <div class="mat-header">
+              <div class="mat-title">${item.title}</div>
+              <span class="m-badge ${done ? "m-badge-ordered" : "m-badge-open"}">
+                ${done ? "✅ Erledigt / Da" : "⏳ In Bearbeitung"}
+              </span>
+            </div>
+            <div class="mat-meta">
+              ${item.dueDate ? `<span class="m-badge m-badge-qty">📅 Termin bei uns: ${formatDateDE(item.dueDate)}</span>` : `<span class="m-badge">Kein Termin angegeben</span>`}
+              <span class="m-badge">👤 ${item.createdBy} (${item.createdDate || ""})</span>
+            </div>
+            ${item.note ? `<div style="font-size:0.82rem; color:#475569;">💬 ${item.note}</div>` : ""}
+            <div class="mat-actions">
+              <button type="button" class="btn btn-success" onclick="toggleGrundmannStatus('${item.id}')">
+                ${done ? "↺ Wieder auf In Bearbeitung" : "✓ Als erledigt / da markieren"}
+              </button>
+              ${canDelete ? `<button type="button" class="btn btn-danger" onclick="deleteGrundmannOrder('${item.id}')">🗑️ Löschen</button>` : ""}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+  }
+
+  // --- MATERIALBESTELLUNG ---
+  function openMaterialModal() {
+    document.getElementById("mName").value = "";
+    document.getElementById("mArtNr").value = "";
+    document.getElementById("mQty").value = "1";
+    clearMaterialPhoto();
+    openModal("materialModal");
+  }
+
+  function handleMaterialPhoto(input) {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = new Image();
+      img.onload = function() {
+        const maxDim = 720;
+        let w = img.width, h = img.height;
+        if (w > maxDim || h > maxDim) {
+          if (w > h) { h = Math.round((h * maxDim) / w); w = maxDim; }
+          else { w = Math.round((w * maxDim) / h); h = maxDim; }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+        pendingPhotoDataUrl = canvas.toDataURL("image/jpeg", 0.78);
+        document.getElementById("mPhotoPreviewImg").src = pendingPhotoDataUrl;
+        document.getElementById("mPhotoPreviewWrap").style.display = "flex";
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function clearMaterialPhoto() {
+    pendingPhotoDataUrl = "";
+    document.getElementById("mPhotoInput").value = "";
+    document.getElementById("mPhotoPreviewImg").src = "";
+    document.getElementById("mPhotoPreviewWrap").style.display = "none";
+  }
+
+  function saveMaterialOrder() {
+    const name = document.getElementById("mName").value.trim();
+    const artNr = document.getElementById("mArtNr").value.trim();
+    const qty = document.getElementById("mQty").value.trim() || "1";
+    if (!name) { alert("Bitte den Produkt Name eingeben."); return; }
+    closeModal("materialModal");
+    if (!appData.materialOrders || typeof appData.materialOrders !== "object") appData.materialOrders = {};
+    const id = "mat_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6);
+    const todayStr = new Date().toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" });
+    const orderObj = { id, name, artNr, qty, photo: pendingPhotoDataUrl || "", status: "open", requestedBy: currentUserName || "Team", requestedDate: todayStr, createdAt: Date.now() };
+    appData.materialOrders[id] = orderObj;
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("materialOrders/" + id).set(orderObj).catch(e => console.error(e));
+    updateAuthUI();
+    renderMaterial();
+  }
+
+  function confirmMaterialOrdered(id) {
+    if (!isChef()) { alert("Nur Jörg und Husam können Materialien als bestellt bestätigen."); return; }
+    const item = appData.materialOrders && appData.materialOrders[id];
+    if (!item) return;
+    item.status = "ordered";
+    item.orderedBy = currentUserName;
+    item.orderedDate = new Date().toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" });
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("materialOrders/" + id).set(item).catch(e => console.error(e));
+    updateAuthUI();
+    renderMaterial();
+  }
+
+  function reopenMaterialOrder(id) {
+    if (!isChef()) return;
+    const item = appData.materialOrders && appData.materialOrders[id];
+    if (!item) return;
+    item.status = "open";
+    delete item.orderedBy; delete item.orderedDate;
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("materialOrders/" + id).set(item).catch(e => console.error(e));
+    updateAuthUI();
+    renderMaterial();
+  }
+
+  function deleteMaterialOrder(id) {
+    const item = appData.materialOrders && appData.materialOrders[id];
+    if (!item) return;
+    if (!isChef() && item.requestedBy !== currentUserName) { alert("Nur der Ersteller oder ein Chef kann diesen Eintrag löschen."); return; }
+    delete appData.materialOrders[id];
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("materialOrders/" + id).remove().catch(e => console.error(e));
+    updateAuthUI();
+    renderMaterial();
+  }
+
+  function openPhotoZoom(id) {
+    const item = appData.materialOrders && appData.materialOrders[id];
+    if (!item || !item.photo) return;
+    document.getElementById("zoomTitle").textContent = item.name;
+    document.getElementById("zoomImg").src = item.photo;
+    openModal("photoZoomModal");
+  }
+
+  function setMaterialFilter(f) {
+    materialFilter = f;
+    document.getElementById("matFilterOpenBtn").className = f === "OPEN" ? "btn btn-primary" : "btn";
+    document.getElementById("matFilterOrderedBtn").className = f === "ORDERED" ? "btn btn-primary" : "btn";
+    document.getElementById("matFilterAllBtn").className = f === "ALL" ? "btn btn-primary" : "btn";
+    renderMaterial();
+  }
+
+  function renderMaterial() {
+    const container = document.getElementById("materialListContent");
+    const countInfo = document.getElementById("matCountInfo");
+    const allOrders = getMaterialOrdersList();
+    const openCount = allOrders.filter(o => o.status !== "ordered").length;
+    const orderedCount = allOrders.filter(o => o.status === "ordered").length;
+    countInfo.textContent = `${openCount} offen • ${orderedCount} bestellt`;
+
+    let filtered = [...allOrders];
+    if (materialFilter === "OPEN") filtered = filtered.filter(o => o.status !== "ordered");
+    else if (materialFilter === "ORDERED") filtered = filtered.filter(o => o.status === "ordered");
+
+    filtered.sort((a, b) => {
+      if (a.status !== "ordered" && b.status === "ordered") return -1;
+      if (a.status === "ordered" && b.status !== "ordered") return 1;
+      return (b.createdAt || 0) - (a.createdAt || 0);
+    });
+
+    if (filtered.length === 0) {
+      container.innerHTML = `<div class="mat-card" style="justify-content:center; text-align:center; color:#64748b; padding:26px;">Keine Materialeinträge in dieser Ansicht.</div>`;
+      return;
+    }
+
+    container.innerHTML = filtered.map(item => {
+      const isOrdered = item.status === "ordered";
+      const canDelete = isChef() || item.requestedBy === currentUserName;
+      return `
+        <div class="mat-card ${isOrdered ? "ordered" : ""}">
+          ${item.photo ? `<img class="mat-thumb" src="${item.photo}" alt="Foto" onclick="openPhotoZoom('${item.id}')" />` : ""}
+          <div class="mat-body">
+            <div class="mat-header">
+              <div class="mat-title">${item.name}</div>
+              <span class="m-badge ${isOrdered ? "m-badge-ordered" : "m-badge-open"}">${isOrdered ? `✅ Bestellt${item.orderedBy ? " (" + item.orderedBy + ", " + (item.orderedDate || "") + ")" : ""}` : "⏳ Noch zu bestellen"}</span>
+            </div>
+            <div class="mat-meta">
+              <span class="m-badge m-badge-qty">Anzahl: ${item.qty}</span>
+              ${item.artNr ? `<span class="m-badge m-badge-dept">Art.-Nr.: ${item.artNr}</span>` : ""}
+              <span class="m-badge">👤 ${item.requestedBy} (${item.requestedDate || ""})</span>
+            </div>
+            <div class="mat-actions">
+              ${(isChef() && !isOrdered) ? `<button type="button" class="btn btn-success" onclick="confirmMaterialOrdered('${item.id}')">✅ Bestellung bestätigen (Bestellt)</button>` : ""}
+              ${(isChef() && isOrdered) ? `<button type="button" class="btn" onclick="reopenMaterialOrder('${item.id}')">↺ Wieder auf Offen setzen</button>` : ""}
+              ${canDelete ? `<button type="button" class="btn btn-danger" onclick="deleteMaterialOrder('${item.id}')">🗑️ Löschen</button>` : ""}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+  }
+
+  function openWishModal() {
+    isSubmittingWish = false;
+    const submitBtn = document.getElementById("wishSubmitBtn");
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Wunsch absenden";
+    const sel = document.getElementById("wishEmp");
+    if (currentUserName && appData.employees.includes(currentUserName)) sel.value = currentUserName;
+    sel.disabled = !isChef();
+    document.getElementById("wishType").value = "U";
+    const todayIso = getTodayLocalIso();
+    document.getElementById("wishStart").value = todayIso;
+    document.getElementById("wishEnd").value = todayIso;
+    document.getElementById("wishNote").value = "";
+    openModal("wishModal");
+  }
+
+  function openRangeModal() {
+    const todayIso = getTodayLocalIso();
+    document.getElementById("rangeStart").value = todayIso;
+    document.getElementById("rangeEnd").value = todayIso;
+    openModal("rangeModal");
+  }
+
+  function submitVacationWish() {
+    if (isSubmittingWish) return;
+    const emp = document.getElementById("wishEmp").value;
+    const type = document.getElementById("wishType").value;
+    const start = document.getElementById("wishStart").value;
+    const end = document.getElementById("wishEnd").value;
+    const note = document.getElementById("wishNote").value.trim();
+    if (!start || !end || start > end) { alert("Bitte gültiges Start- und Enddatum wählen."); return; }
+
+    isSubmittingWish = true;
+    document.getElementById("wishSubmitBtn").disabled = true;
+    closeModal("wishModal");
+
+    appData.vacationWishes.unshift({
+      id: "wish_" + Date.now() + "_" + Math.random().toString(36).slice(2, 5),
+      emp, type, start, end, note, status: "pending", requestedBy: currentUserName || emp, createdAt: Date.now()
+    });
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("vacationWishes").set(appData.vacationWishes).catch(e => console.error(e));
+    updateAuthUI();
+    switchAnwTab(5, document.getElementById("wishTabBtn"));
+    isSubmittingWish = false;
+  }
+
+  function approveWish(wishId) {
+    if (!isChef()) return;
+    const idx = appData.vacationWishes.findIndex(item => String(item.id) === String(wishId));
+    if (idx === -1) return;
+    const w = appData.vacationWishes[idx];
+    if (!appData.entries || typeof appData.entries !== "object") appData.entries = {};
+    CALENDAR_2027.allDays.forEach(d => {
+      if (d.iso >= w.start && d.iso <= w.end) appData.entries[`${w.emp}_${d.iso}`] = w.type;
+    });
+    appData.vacationWishes[idx] = { ...w, status: "approved", decidedBy: currentUserName, decidedAt: Date.now() };
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.update({ entries: appData.entries, vacationWishes: appData.vacationWishes }).catch(e => console.error(e));
+    updateAuthUI();
+    renderAnwesenheit();
+  }
+
+  function rejectWish(wishId) {
+    if (!isChef()) return;
+    const idx = appData.vacationWishes.findIndex(item => String(item.id) === String(wishId));
+    if (idx === -1) return;
+    appData.vacationWishes[idx] = { ...appData.vacationWishes[idx], status: "rejected", decidedBy: currentUserName, decidedAt: Date.now() };
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("vacationWishes").set(appData.vacationWishes).catch(e => console.error(e));
+    updateAuthUI();
+    renderAnwesenheit();
+  }
+
+  function deleteWish(wishId) {
+    const w = appData.vacationWishes.find(item => String(item.id) === String(wishId));
+    if (!w || (!isChef() && w.emp !== currentUserName)) return;
+    appData.vacationWishes = appData.vacationWishes.filter(item => String(item.id) !== String(wishId));
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.child("vacationWishes").set(appData.vacationWishes).catch(e => console.error(e));
+    updateAuthUI();
+    renderAnwesenheit();
+  }
+
+  function formatDateDE(iso) {
+    if (!iso || !iso.includes("-")) return iso || "";
+    const [y, m, d] = iso.split("-");
+    return `${d}.${m}.${y}`;
+  }
+
+  function selectBrush(val, btn) {
+    currentBrush = val;
+    document.querySelectorAll(".brush-btn").forEach(b => b.classList.remove("active"));
+    if (btn && btn.classList) btn.classList.add("active");
+  }
+
+  function switchAnwTab(idx, btn) {
+    anwTab = idx;
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    if (btn) btn.classList.add("active");
+    document.getElementById("brushBar").style.display = (idx < 4 && isChef()) ? "flex" : "none";
+    renderAnwesenheit();
+  }
+
+  function toggleCell(emp, iso) {
+    if (!isChef()) {
+      alert("Als Mitarbeiter kannst du deinen Urlaub oben über '✉️ Urlaub beantragen' als Wunsch einreichen.");
+      return;
+    }
+    if (!appData.entries || typeof appData.entries !== "object") appData.entries = {};
+    const key = `${emp}_${iso}`;
+    const curVal = appData.entries[key] || "";
+    if (currentBrush === "" || curVal === currentBrush) delete appData.entries[key];
+    else appData.entries[key] = currentBrush;
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) {
+      if (appData.entries[key] === undefined) dbRef.child("entries/" + key).remove().catch(e => console.error(e));
+      else dbRef.child("entries/" + key).set(appData.entries[key]).catch(e => console.error(e));
+    }
+    renderAnwesenheit();
+  }
+
+  function applyRange() {
+    if (!isChef()) return;
+    const emp = document.getElementById("rangeEmp").value;
+    const status = document.getElementById("rangeStatus").value;
+    const start = document.getElementById("rangeStart").value;
+    const end = document.getElementById("rangeEnd").value;
+    if (!start || !end || start > end) { alert("Bitte gültiges Start- und Enddatum wählen."); return; }
+    CALENDAR_2027.allDays.forEach(d => {
+      if (d.iso >= start && d.iso <= end) {
+        const key = `${emp}_${d.iso}`;
+        if (status === "") delete appData.entries[key];
+        else appData.entries[key] = status;
+      }
+    });
+    closeModal("rangeModal");
+    syncToCloud();
+    renderAnwesenheit();
+  }
+
+  function updateQuota(emp, val) {
+    if (!isChef()) return;
+    appData.quotas[emp] = parseFloat(val) || 0;
+    syncToCloud();
+    renderAnwesenheit();
+  }
+
+  function checkOverlaps(daysList) {
+    const banner = document.getElementById("overlapBanner");
+    if (!isChef()) { banner.classList.remove("visible"); return; }
+    const warnings = [];
+    daysList.forEach(d => {
+      const absent = appData.employees.filter(emp => {
+        const st = appData.entries[`${emp}_${d.iso}`];
+        return st === "U" || st === "½U" || st === "S";
+      });
+      if (absent.length >= 2) warnings.push(`${d.day}.${d.month + 1}. (${absent.join(", ")})`);
+    });
+    if (warnings.length > 0) {
+      banner.classList.add("visible");
+      banner.innerHTML = `<strong>⚠️ Gleichzeitige Abwesenheit (≥ 2 Personen):</strong> ${warnings.slice(0, 6).join(" • ")}`;
+    } else {
+      banner.classList.remove("visible");
+    }
+  }
+
+  function renderAnwesenheit() {
+    const container = document.getElementById("anwesenheitContent");
+    const chefMode = isChef();
+    const visibleAccounts = chefMode ? appData.accounts : appData.accounts.filter(a => a.name === currentUserName);
+
+    if (anwTab < 4) {
+      const q = CALENDAR_2027.quarters[anwTab];
+      checkOverlaps(q.days);
+      const monthCounts = {};
+      q.days.forEach(d => { monthCounts[d.month] = (monthCounts[d.month] || 0) + 1; });
+
+      let html = `<div class="table-wrap"><table><thead><tr><th class="emp-col" rowspan="2">Abteilung / Mitarbeiter</th>`;
+      q.months.forEach(m => { html += `<th class="month-header" colspan="${monthCounts[m]}">${MONTHS_DE[m]} 2027</th>`; });
+      html += `</tr><tr>`;
+      q.days.forEach(d => {
+        const isFri = d.dow === 5 ? "week-end" : "";
+        html += `<th class="day-header ${isFri}"><span class="wd">${d.wd}</span>${d.day}</th>`;
+      });
+      html += `</tr></thead><tbody>`;
+
+      DEPARTMENT_ORDER.forEach(dept => {
+        const deptMembers = visibleAccounts.filter(a => (a.dept || "Technik") === dept);
+        if (deptMembers.length === 0) return;
+        html += `<tr class="dept-banner-row"><td colspan="${q.days.length + 1}"><span class="dept-sticky-label">${dept}</span></td></tr>`;
+        deptMembers.forEach(acc => {
+          const emp = acc.name;
+          html += `<tr class="emp-row"><td class="emp-col">${emp}</td>`;
+          q.days.forEach(d => {
+            const val = appData.entries[`${emp}_${d.iso}`] || "";
+            const isFri = d.dow === 5 ? "week-end" : "";
+            const cls = val ? `cell-${val}` : "";
+            html += `<td class="day-cell ${isFri} ${cls}" onclick="toggleCell('${emp}', '${d.iso}')">${val}</td>`;
+          });
+          html += `</tr>`;
+        });
+      });
+
+      html += `</tbody></table></div>`;
+      container.innerHTML = html;
+    } else if (anwTab === 4) {
+      document.getElementById("overlapBanner").classList.remove("visible");
+      let html = `<div class="table-wrap"><table><thead><tr><th class="emp-col">Mitarbeiter</th><th style="padding:8px;background:#183452;color:#fff;">Anspruch</th><th style="padding:8px;background:#183452;color:#fff;">Q1</th><th style="padding:8px;background:#183452;color:#fff;">Q2</th><th style="padding:8px;background:#183452;color:#fff;">Q3</th><th style="padding:8px;background:#183452;color:#fff;">Q4</th><th style="padding:8px;background:#183452;color:#fff;">Gesamt</th><th style="padding:8px;background:#183452;color:#fff;">Rest</th><th style="padding:8px;background:#183452;color:#fff;">Krank (K)</th><th style="padding:8px;background:#183452;color:#fff;">Schule (S)</th></tr></thead><tbody>`;
+
+      DEPARTMENT_ORDER.forEach(dept => {
+        const deptMembers = visibleAccounts.filter(a => (a.dept || "Technik") === dept);
+        if (deptMembers.length === 0) return;
+        html += `<tr class="dept-banner-row"><td colspan="10"><span class="dept-sticky-label">${dept}</span></td></tr>`;
+        deptMembers.forEach(acc => {
+          const emp = acc.name;
+          let qTotals = [0, 0, 0, 0], schoolDays = 0, sick = 0;
+          CALENDAR_2027.quarters.forEach((q, qIdx) => {
+            q.days.forEach(d => {
+              const st = appData.entries[`${emp}_${d.iso}`];
+              if (st === "U") qTotals[qIdx] += 1;
+              else if (st === "½U") qTotals[qIdx] += 0.5;
+              else if (st === "S") schoolDays += 1;
+              else if (st === "K") sick += 1;
+            });
+          });
+          const totalU = qTotals.reduce((a, b) => a + b, 0);
+          const quota = appData.quotas[emp] ?? 30;
+          const rest = quota - totalU;
+          const disabledAttr = chefMode ? "" : "disabled";
+          html += `<tr class="emp-row"><td class="emp-col">${emp}</td><td style="padding:6px;"><input type="number" step="0.5" value="${quota}" ${disabledAttr} style="width:52px;text-align:center;" onchange="updateQuota('${emp}', this.value)" /></td><td>${qTotals[0]}</td><td>${qTotals[1]}</td><td>${qTotals[2]}</td><td>${qTotals[3]}</td><td><strong>${totalU}</strong></td><td style="font-weight:700;color:${rest>=0?'#15803d':'#b91c1c'}">${rest}</td><td>${sick}</td><td>${schoolDays}</td></tr>`;
+        });
+      });
+      html += `</tbody></table></div>`;
+      container.innerHTML = html;
+    } else if (anwTab === 5) {
+      document.getElementById("overlapBanner").classList.remove("visible");
+      const visibleWishes = chefMode ? appData.vacationWishes : appData.vacationWishes.filter(w => w.emp === currentUserName);
+
+      let html = `<div class="wish-panel"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; background:#fff; padding:12px; border-radius:12px; border:1px solid var(--line);"><div><strong>Eingegangene Urlaubswünsche (Urlaub / ½ Urlaub)</strong><div style="font-size:0.8rem; color:#64748b;">${chefMode ? "Du bist als Chef angemeldet und kannst Wünsche direkt in den Kalender übernehmen." : "Du siehst hier nur deine eigenen Urlaubswünsche."}</div></div><button type="button" class="btn btn-primary" onclick="openWishModal()">+ Neuen Wunsch eintragen</button></div>`;
+
+      if (visibleWishes.length === 0) {
+        html += `<div class="wish-card" style="text-align:center; color:#64748b; padding:24px;">Noch keine Urlaubswünsche eingetragen.</div>`;
+      } else {
+        visibleWishes.forEach(w => {
+          const typeLabel = w.type === "½U" ? "½U (Halber Urlaubstag)" : "U (Urlaub)";
+          const statusText = w.status === "approved"
+            ? `✅ Bestätigt${w.decidedBy ? " von " + w.decidedBy : ""} (im Kalender eingetragen)`
+            : (w.status === "rejected" ? `❌ Abgelehnt${w.decidedBy ? " von " + w.decidedBy : ""}` : "⏳ Wartet auf Bestätigung (Jörg / Husam)");
+
+          html += `
+            <div class="wish-card ${w.status}">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+                <strong style="font-size:1rem;">👤 ${w.emp} • <span style="color:var(--primary-dark);">${typeLabel}</span></strong>
+                <span style="font-size:0.78rem; font-weight:700;">${statusText}</span>
+              </div>
+              <div style="font-size:0.9rem; font-weight:700;">📅 ${formatDateDE(w.start)} bis ${formatDateDE(w.end)}</div>
+              ${w.note ? `<div style="font-size:0.83rem; color:#475569;">💬 ${w.note}</div>` : ""}
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+                ${(chefMode && w.status === "pending") ? `<button type="button" class="btn btn-success" onclick="approveWish('${w.id}')">✅ Bestätigen &amp; in Kalender eintragen</button><button type="button" class="btn btn-danger" onclick="rejectWish('${w.id}')">✕ Ablehnen</button>` : ""}
+                ${(chefMode || (w.emp === currentUserName && w.status === "pending")) ? `<button type="button" class="btn" style="font-size:0.78rem;" onclick="deleteWish('${w.id}')">🗑️ Entfernen</button>` : ""}
+              </div>
+            </div>
+          `;
+        });
+      }
+      html += `</div>`;
+      container.innerHTML = html;
+    }
+  }
+
+  function openEmpModal() {
+    if (!isChef()) return;
+    renderEmpList();
+    openModal("empModal");
+  }
+
+  function renderEmpList() {
+    const box = document.getElementById("empManageList");
+    let html = "";
+    DEPARTMENT_ORDER.forEach(dept => {
+      const members = appData.accounts.filter(a => (a.dept || "Technik") === dept);
+      if (members.length === 0) return;
+      html += `<div style="background:#e2e8f0; padding:5px 10px; font-weight:800; font-size:0.78rem; text-transform:uppercase;">${dept}</div>`;
+      members.forEach(acc => {
+        html += `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid #e2e8f0;gap:8px;flex-wrap:wrap;">
+            <div>
+              <strong>${acc.name}</strong> ${acc.role === "chef" ? "👑" : ""}
+              <div style="font-size:0.78rem; color:#475569;">User: <code>${acc.username}</code> • Passwort: <code>${acc.password}</code></div>
+            </div>
+            <div style="display:flex; gap:5px;">
+              <button type="button" class="btn" style="padding:4px 8px;font-size:0.75rem;" onclick="editAccount('${acc.name}')">✏️ Ändern</button>
+              ${acc.role !== "chef" ? `<button type="button" class="btn btn-danger" style="padding:4px 8px;font-size:0.75rem;" onclick="removeEmployee('${acc.name}')">✕</button>` : ""}
+            </div>
+          </div>
+        `;
+      });
+    });
+    box.innerHTML = html;
+  }
+
+  function editAccount(name) {
+    const acc = appData.accounts.find(a => a.name === name);
+    if (!acc) return;
+    const newU = prompt(`Benutzername für ${name}:`, acc.username);
+    if (newU === null) return;
+    const newP = prompt(`Neues Passwort für ${name}:`, acc.password);
+    if (newP === null) return;
+    if (newU.trim()) acc.username = newU.trim().toLowerCase();
+    if (newP.trim()) acc.password = newP.trim();
+    syncToCloud();
+    renderEmpList();
+  }
+
+  function addEmployee() {
+    const name = document.getElementById("newEmpName").value.trim();
+    const dept = document.getElementById("newEmpDept").value;
+    const user = document.getElementById("newEmpUser").value.trim().toLowerCase();
+    const pass = document.getElementById("newEmpPass").value.trim() || "123";
+    if (!name || !user) { alert("Bitte Name und Username eingeben."); return; }
+    if (appData.accounts.some(a => a.name.toLowerCase() === name.toLowerCase() || a.username.toLowerCase() === user)) {
+      alert("Name oder Username existiert bereits."); return;
+    }
+    appData.accounts.push({ name, dept, username: user, password: pass, role: dept === "Chefs" ? "chef" : "staff" });
+    appData.employees = appData.accounts.map(a => a.name);
+    if (!appData.quotas || typeof appData.quotas !== "object") appData.quotas = {};
+    appData.quotas[name] = 30;
+    document.getElementById("newEmpName").value = "";
+    document.getElementById("newEmpUser").value = "";
+    document.getElementById("newEmpPass").value = "";
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.update({ accounts: appData.accounts, employees: appData.employees, quotas: appData.quotas }).catch(e => console.error(e));
+    refreshEmployeeSelectors();
+    renderEmpList();
+    if (currentSection === "anwesenheit") renderAnwesenheit();
+  }
+
+  function removeEmployee(name) {
+    appData.accounts = appData.accounts.filter(a => a.name !== name);
+    appData.employees = appData.accounts.map(a => a.name);
+    localStorage.setItem("urlaub2027_cache_" + teamCode, JSON.stringify(appData));
+    if (dbRef) dbRef.update({ accounts: appData.accounts, employees: appData.employees }).catch(e => console.error(e));
+    refreshEmployeeSelectors();
+    renderEmpList();
+    if (currentSection === "anwesenheit") renderAnwesenheit();
+  }
+
+  function copyShareLink() {
+    const url = window.location.href.split("?")[0].split("#")[0];
+    navigator.clipboard?.writeText("Lloyd-Dental. Zahntechnik – Team, Planung & Zeiterfassung\nLink: " + url + "\n(Anmeldung mit Benutzername & Passwort)");
+    alert("Link für das Team wurde kopiert!");
+  }
+
+  function openModal(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.add("open");
+    if (!el.dataset.backdropBound) {
+      el.dataset.backdropBound = "1";
+      el.addEventListener("click", function(ev) { if (ev.target === el) closeModal(id); });
+    }
+  }
+  function closeModal(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove("open");
+  }
+
+  let deferredInstallPrompt = null;
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredInstallPrompt = e; });
+
+  function promptInstallApp() {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      deferredInstallPrompt.userChoice.then(() => { deferredInstallPrompt = null; });
+      return;
+    }
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+      alert("Apple iPhone / iPad App-Installation:\n1. Unten in Safari auf das Teilen-Symbol (□↑) tippen.\n2. Nach unten scrollen und 'Zum Home-Bildschirm' wählen.\n3. Oben rechts auf 'Hinzufügen' tippen.");
+    } else {
+      alert("Verknüpfung / App auf dem Startbildschirm erstellen:\n1. Im Browser-Menü (⋮) auf 'Zum Startbildschirm hinzufügen' oder 'Verknüpfung erstellen' tippen.\n2. Danach öffnet sich Lloyd-Dental direkt vom Startbildschirm.");
+    }
+  }
+
+  if ("serviceWorker" in navigator && (window.location.protocol === "https:" || window.location.hostname === "localhost")) {
+    window.addEventListener("load", () => {
+      const swCode = `
+        const CACHE_NAME = "lloyd-dental-pwa-v6";
+        self.addEventListener("install", () => self.skipWaiting());
+        self.addEventListener("activate", (event) => {
+          event.waitUntil(
+            caches.keys().then((keys) => Promise.all(
+              keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
+            ))
+          );
+          self.clients.claim();
+        });
+        self.addEventListener("fetch", (event) => {
+          if (event.request.method !== "GET") return;
+          const url = event.request.url;
+          if (url.includes("firebaseio.com") || url.includes("googleapis.com")) return;
+          event.respondWith(
+            fetch(event.request)
+              .then((resp) => {
+                if (resp && resp.status === 200 && resp.type === "basic") {
+                  const clone = resp.clone();
+                  caches.open(CACHE_NAME).then((c) => c.put(event.request, clone));
+                }
+                return resp;
+              })
+              .catch(() => caches.match(event.request))
+          );
+        });
+      `;
+      const blob = new Blob([swCode], { type: "application/javascript" });
+      const swUrl = URL.createObjectURL(blob);
+      navigator.serviceWorker.register(swUrl).catch(() => {});
+    });
+  }
+
+  init();
+</script>
+</body>
+</html>
